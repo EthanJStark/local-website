@@ -23,18 +23,11 @@ As you work on this goal, consider these questions:
 ## Specifications
 
 - [ ] Site has at least 3 pages.
-- [ ] Site is _not_ published on the web\*.
-- [ ] Site can be viewed locally on a browser by opening its `index.html` file.
 - [ ] All links work correctly (i.e. no broken links).
 - [ ] All images and other external resources load correctly.
-
-\*Copying another website's content is fine for practicing, but publishing it would likely infringe upon the original site's copyright.
-
-### Required
-
-_Do not remove these specs - they are required for all goals_.
-
-- [ ] External resources used are properly cited.
+- [ ] No external frameworks are used.
+- [ ] Mobile-first design.
+- [ ] Deployed to Heroku.
 - [ ] The artifact produced is properly licensed, preferably with the [MIT license][mit-license].
 
 ---
