@@ -1,0 +1,23 @@
+{
+  "name": "local-website",
+  "version": "1.0.0",
+  "description": "Build a website for a local organization.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EthanJStark/local-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EthanJStark/local-website/issues"
+  },
+  "homepage": "https://github.com/EthanJStark/local-website#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "pug": "^2.0.0-beta6"
+  }
+}
