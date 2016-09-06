@@ -38,3 +38,20 @@ nav .burger {
   border-bottom: 2px solid white;
   margin-top: 4px;
 }
+
+.nav-dropdown {
+  position: absolute;
+  top: 38px;
+  right: 0px;
+  padding: 1em;
+  border: 1px solid;
+  border-color: #b77c82;
+  background-color: #89131f;
+}
+
+.nav-dropdown > a {
+  display: block;
+  padding: .5em;
+  color: white;
+  text-decoration: none;
+}
