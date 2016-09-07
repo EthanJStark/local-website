@@ -28,6 +28,10 @@ nav {
   top: 100px;
 }
 
+.mySlides.fade {
+  padding: 20px;
+}
+
 .dot {
   cursor:pointer;
   height: 13px;
@@ -71,10 +75,10 @@ nav .burger {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
   position: relative;
   top: 100px;
   margin: auto;
+  padding-bottom: 100px;
 }
 
 /* Next & previous buttons */
@@ -182,10 +186,10 @@ h1 {
 ============================================================ */
 section.module:last-child {
   margin-bottom: 0;
+  padding: 50px;
 }
 section.module h2 {
   margin-bottom: 40px;
-  font-family: "Roboto Slab", serif;
   font-size: 30px;
 }
 section.module p {
