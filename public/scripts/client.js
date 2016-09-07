@@ -15,9 +15,14 @@ $(function(){
   })
 
   var slideLeft = function(){
-    if ( $('#pic1 ' )
     $('.carousel > .carousel-showing').removeClass('carousel-showing')
   }
+})
+
+$(document).ready(function() {
+  $('.burger').click(function() {
+    $('.nav-dropdown').slideToggle('fast')
+  })
 })
 
 

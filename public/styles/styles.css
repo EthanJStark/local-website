@@ -46,6 +46,7 @@ nav .burger {
   border: 1px solid;
   border-color: #b77c82;
   background-color: #89131f;
+  display: none;
 }
 
 .nav-dropdown > a {

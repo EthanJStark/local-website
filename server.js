@@ -7,6 +7,10 @@ app.get('/', (request, response) => {
   response.render('index')
 })
 
+app.get('/layout', (request, response) => {
+  response.render('layout')
+})
+
 app.get('/main', (request, response) => {
   response.render('main')
 })
