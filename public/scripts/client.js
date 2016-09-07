@@ -15,12 +15,10 @@ $(function(){
   })
 
   var slideLeft = function(){
-    if ( $('#pic1 ' ) 
+
     $('.carousel > .carousel-showing').removeClass('carousel-showing')
   }
 })
-
-
 
 
 // const carousel = () => {

@@ -15,4 +15,5 @@ app.get('/gallery', (request, response) => {
   response.render('omi')
 })
 
-app.listen(3000)
+
+app.listen(process.env.PORT || 3000)

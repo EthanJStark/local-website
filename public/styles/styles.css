@@ -291,6 +291,7 @@ body { margin: 0; }
   padding-left: 0;
 }
 
+
 .nav > li,
 .nav > li > a {
   display: inline-block;
@@ -335,4 +336,56 @@ body { margin: 0; }
     margin-right: auto;
     width: 6em
   }   
+=======
+.carousel {
+  background-color: black;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.carousel > .carousel-image {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  transition: left 1s;
+}
+
+.carousel > .carousel-showing{
+  left: 0;
+
+}
+
+.carousel > .carousel-image > img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.carousel > .carousel-arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 30px;
+  color: white;
+  font-size: 120%;
+
+}
+
+.carousel > .carousel-arrow:hover {
+  background-color: red;
+}
+
+.carousel > .carousel-arrow-left {
+  left: 0;
+
+}
+
+.carousel > .carousel-arrow-right {
+  right: 0;
+
+
 }

@@ -38,9 +38,7 @@ nav .burger {
   margin-top: 4px;
 }
 
-
-
-.slides {
+.mySlides {
 	top: 100px;
 }
 
@@ -83,13 +81,26 @@ nav .burger {
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
-  position: fixed;
+  position: absolute;
+  color: grey;
+  opacity: .5;
+  text-decoration: none;
+  align-items: center;
+}
+
+.next:hover, .prev:hover {
+  color: white;
 }
 
 .prev {
   left: 0;
   border-radius: 3px 0 0 3px;
-  position: fixed; 
+  position: absolute;
+  color: grey;
+  opacity: .5;
+  text-decoration: none;
+  align-items: center;
+  position: fixed;
 }
 
 h1 {
@@ -99,12 +110,12 @@ h1 {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+/*.prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
   color: red;
   opacity: .4;
   position: relative;
-}
+}*/
 
 /* Caption text */
 .text {
@@ -152,18 +163,28 @@ div .dot:hover {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
 .container {
   max-width: 960px;
   margin: 0 auto;
+}
+
+/* ============================================================
+  SECTIONS CAROUSEL
+============================================================ */
+
+section.carousel {
+  text-align: center;
+  width: 100%;
+  display: flex;
 }
 
 /* ============================================================
@@ -235,7 +256,6 @@ section.module.parallax-3 {
   }
 }
 
-
 /*footer*/
 
 section.footer {
@@ -298,7 +318,7 @@ section.footer {
 }
 .active button {
   display: block;
-} 
+}
 .offscreen {
   position: absolute;
   left: -2000px;
