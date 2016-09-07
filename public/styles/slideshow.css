@@ -38,58 +38,33 @@ nav .burger {
   margin-top: 4px;
 }
 
-
-
-.slides {
-	top: 100px;
-}
-
-.dot {
-  cursor:pointer;
-  height: 13px;
-  width: 13px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-/* Slideshow container */
-.slideshow-container {
-  position: relative;
-  top: 100px;
-  margin: auto;
-  padding-bottom: 100px;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+.mySlides {
+  
 }
 
 /* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
-  position: fixed;
+  position: absolute;
+  color: grey;
+  opacity: .5;
+  text-decoration: none;
+  align-items: center;
+}
+
+.next:hover, .prev:hover {
+  color: white;
 }
 
 .prev {
   left: 0;
   border-radius: 3px 0 0 3px;
-  position: fixed; 
+  position: absolute;
+  color: grey;
+  opacity: .5;
+  text-decoration: none;
+  align-items: center;
 }
 
 h1 {
@@ -99,12 +74,12 @@ h1 {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+/*.prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
   color: red;
   opacity: .4;
   position: relative;
-}
+}*/
 
 /* Caption text */
 .text {
@@ -152,18 +127,28 @@ div .dot:hover {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
 .container {
   max-width: 960px;
   margin: 0 auto;
+}
+
+/* ============================================================
+  SECTIONS CAROUSEL
+============================================================ */
+
+section.carousel {
+  text-align: center;
+  width: 100%;
+  display: flex;
 }
 
 /* ============================================================
@@ -243,85 +228,4 @@ section.footer {
   color: white;
   margin: 20px;
   padding: 20px;
-}
-
-/* carousel */
-
-.carouselbox {
-  top: 50px;
-  left: 300px;
-  font-family: helvetica,sans-serif;
-  font-size: 14px;
-  width: 75px;
-  position: relative;
-  margin: 1em;
-  border: 1px solid #ccc;
-  overflow: hidden;
-  text-align: center;
-}
-.content {
-  margin: 10px;
-  padding: 10px;
-  text-align: center;
-}
-.content li {
-  font-size: 100px;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  list-style: none;
-  text-align: center;
-}
-
-.active {
-  height: 130px;
-}
-.active li {
-  position: absolute;
-  top: 200px;
-}
-.active li.current {
-  top: 30px;
-}
-
-
-.active .buttons {
-  padding: 5px 0;
-  background: #eee;
-  text-align: center;
-  z-index: 10;
-  position: relative;
-}
-.carouselbox button {
-  border: none;
-  display: none;
-}
-.active button {
-  display: block;
-} 
-.offscreen {
-  position: absolute;
-  left: -2000px;
-}
-
-
-/*carousel*/
-
-.mySlides {
-  width: 200px;
-  height: 200px;
-  display: none;
-  border-radius: 45%;
-}
-
-.mySlides1 {
-  width: 200px;
-  height: 200px;
-  display: none;
-  border-radius: 45%;
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  transform: rotate(90deg);
 }

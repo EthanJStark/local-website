@@ -1,5 +1,4 @@
 const carousel = () => {
-  const  i;
   const  x = document.getElementsByClassName("mySlides");
   for (index = 0; index < x.length; index++) {
     x[index].style.display = "none";
