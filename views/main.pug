@@ -1,40 +1,20 @@
-doctype html
-html(lang='en')
-  head
-    meta(charset='utf-8')
-    meta(http-equiv='x-ua-compatible', content='ie=edge')
-    title Impact Hub Oakland
-    meta(name='description', content='')
-    meta(name='viewport', content='width=device-width, initial-scale=1')
-    link(rel='apple-touch-icon', href='apple-touch-icon.png')
-    link(rel='stylesheet' type='text/css' href='/styles/normalize.css')
-    link(rel='stylesheet' type='text/css' href='/styles/slideshow.css')
-    script(src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
-    script(src="/scripts/slideshow.js")
-  body
-    nav
-      a.logo(href='')
+extends layout.pug
+block content
 
-      a.burger(href='')
-        .burger-bar
-        .burger-bar
-        .burger-bar
-        .nav-dropdown
-          a(href='') Join
-          a(href='') Omi Gallery
-    h1 Oakland
-    div
-      .header
-        //- button(src='/main') Omi Gallery
-        //- button(src='/') Join
-    section.carousel
-      .container
-        h2 Carousel
-          img.mySlides(src='/images/pic1.jpg' style='width: 100%')
-          img.mySlides(src='/images/pic2.jpg' style='width: 100%')
-          img.mySlides(src='/images/pic3.jpg' style='width: 100%')
-        a.prev(href='/images/pic2.jpg') <
-        a.next(href='/images/pic3.jpg') >
+
+  h1 Oakland
+  div
+    .header
+      //- button(src='/main') Omi Gallery
+      //- button(src='/') Join
+  section.carousel
+    .container
+      h2 Carousel
+        img.mySlides(src='/images/pic1.jpg' style='width: 100%')
+        img.mySlides(src='/images/pic2.jpg' style='width: 100%')
+        img.mySlides(src='/images/pic3.jpg' style='width: 100%')
+      a.prev(href='/images/pic2.jpg') <
+      a.next(href='/images/pic3.jpg') >
       //- img.slides(src='/images/pic2.jpg' style='width: 100%')
       //- img.slides(src='/images/pic3.jpg' style='width: 100%')
   //-   div
