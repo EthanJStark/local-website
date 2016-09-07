@@ -38,8 +38,6 @@ nav .burger {
   margin-top: 4px;
 }
 
-
-
 .slides {
 	top: 100px;
 }
@@ -89,7 +87,7 @@ nav .burger {
 .prev {
   left: 0;
   border-radius: 3px 0 0 3px;
-  position: fixed; 
+  position: fixed;
 }
 
 h1 {
@@ -152,12 +150,12 @@ div .dot:hover {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
@@ -298,7 +296,7 @@ section.footer {
 }
 .active button {
   display: block;
-} 
+}
 .offscreen {
   position: absolute;
   left: -2000px;
