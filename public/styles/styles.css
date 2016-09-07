@@ -107,11 +107,13 @@ nav .burger {
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
+  position: fixed;
 }
 
 .prev {
   left: 0;
   border-radius: 3px 0 0 3px;
+  position: fixed; 
 }
 
 h1 {
@@ -265,4 +267,63 @@ section.footer {
   color: white;
   margin: 20px;
   padding: 20px;
+}
+
+/* carousel */
+
+.carouselbox {
+  top: 50px;
+  left: 300px;
+  font-family: helvetica,sans-serif;
+  font-size: 14px;
+  width: 75px;
+  position: relative;
+  margin: 1em;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  text-align: center;
+}
+.content {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+.content li {
+  font-size: 100px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  text-align: center;
+}
+
+.active {
+  height: 130px;
+}
+.active li {
+  position: absolute;
+  top: 200px;
+}
+.active li.current {
+  top: 30px;
+}
+
+
+.active .buttons {
+  padding: 5px 0;
+  background: #eee;
+  text-align: center;
+  z-index: 10;
+  position: relative;
+}
+.carouselbox button {
+  border: none;
+  display: none;
+}
+.active button {
+  display: block;
+} 
+.offscreen {
+  position: absolute;
+  left: -2000px;
 }

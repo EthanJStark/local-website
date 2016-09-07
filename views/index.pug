@@ -29,11 +29,13 @@ html(lang='en')
           button(src='/main') Omi Gallery
           button(src='/') Join
   div 
-    .slideshow-container
-      .mySlides.fade
-        .numbertext 
-        img(src='./images/pic1.jpg', name='slide', style='width:100%')
-        .text 
+    .carouselbox.active
+      ol.content
+        li 1
+        li.current 2
+        li 3
+        li 4
+
     a.prev(onclick='movetoNext()') <
     a.next(onclick='') >
 
