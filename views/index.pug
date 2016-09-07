@@ -10,7 +10,7 @@ html(lang='en')
     link(rel='stylesheet' type='text/css' href='/styles/normalize.css')
     link(rel='stylesheet' type='text/css' href='/styles/styles.css')
     script(src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
-    script(src="slideshow.js")
+    script(src="./slideshow.js")
   body
     nav
       a.logo(href='')
@@ -19,36 +19,50 @@ html(lang='en')
         .burger-bar
         .burger-bar
         .burger-bar
-      .nav-dropdown
-        a(href='') Join
-        a(href='') Omi Gallery
+        .nav-dropdown
+          a(href='') Join
+          a(href='') Omi Gallery
     h1 Oakland 
      nav.navbar
       .container-fluid
         .navbar-header
-          button(href='/')
-           | Omi Gallery
-          button(href='/')
-           | Join
+          button(src='/main') Omi Gallery
+          button(src='/') Join
+  div 
+    .slideshow-container
+      .mySlides.fade
+        .numbertext 1 / 3
+        img(src='./images/pic1.jpg', name='slide', style='width:100%')
+        .text IMPACT HUB
+    a.prev(onclick='plusSlides(-1)') <
+    a.next(onclick='plusSlides(1)') >
 
-.slideshow-container
-  .mySlides.fade
-    .numbertext 1 / 3
-    img(src='http://placehold.it/350x150')
-    .text IMPACT HUB
-  .mySlides.fade
-    .numbertext 2 / 3
-    img(src='http://placehold.it/350x150')
-    .text
-  .mySlides.fade
-    .numbertext 3 / 3
-    img(src='http://placehold.it/350x150')
-    .text 
-  a.prev(onclick='plusSlides(-1)') ❮
-  a.next(onclick='plusSlides(1)') ❯
-br
 
-div
-  span.dot(onclick='showSlides(1)')
-  span.dot(onclick='showSlides(2)')
-  span.dot(onclick='showSlides(3)')
+  div
+    span.dot()
+    span.dot()
+    span.dot()
+
+  section.module.parallax.parallax-1
+    .container
+      h1 Section 1 Heading
+  section.module.content
+    .container
+      h2 Section 2
+      p Section 2 Text
+  section.module.parallax.parallax-2
+    .container
+      h1 Section 3 Heading
+  section.module.content
+    .container
+      h2 Section 4 Heading
+      p Section 4 Text
+  section.module.parallax.parallax-3
+    .container
+      h1 Section 5 Heading
+  section.module.content
+    .container
+      h2 Section 6 Heading
+      p Section 6 Text
+
+
