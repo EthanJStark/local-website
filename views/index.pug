@@ -1,26 +1,16 @@
-doctype html
-html(lang='en')
-  head
-    meta(charset='utf-8')
-    meta(http-equiv='x-ua-compatible', content='ie=edge')
-    title Impact Hub Oakland
-    meta(name='description', content='')
-    meta(name='viewport', content='width=device-width, initial-scale=1')
-    link(rel='apple-touch-icon', href='apple-touch-icon.png')
-    link(rel='stylesheet' type='text/css' href='/styles/normalize.css')
-    link(rel='stylesheet' type='text/css' href='/styles/styles.css')
-    script(src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
-    script(src="/scripts/slideshow.js")
-  body
-    nav
-      a.logo(href='')
+extends layout.pug 
 
-      a.burger(href='')
-        .burger-bar
-        .burger-bar
-        .burger-bar
-      .nav-dropdown
-        a(href='') Join
-        a(href='') Omi Gallery
-        a(href='') About Us
+block content
+  h1 Index Page
 
+  -  var arrayPictures = ['images/pic1.jpg', 'images/pic2.jpg', 'images/pic3.jpg']
+
+  .carousel
+    #pic1.carousel-image.carousel-showing
+      img(src= arrayPictures[0])
+    #pic2.carousel-image
+      img(src= arrayPictures[1])
+    #pic3.carousel-image
+      img(src= arrayPictures[2])
+    a.carousel-arrow.carousel-arrow-left(href='')='<'
+    a.carousel-arrow.carousel-arrow-right(href='')='>'
