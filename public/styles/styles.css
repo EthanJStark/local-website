@@ -2,27 +2,26 @@
   box-sizing: border-box;
 }
 
+
 html, body {
   height: 100%;
   width: 100%;
 }
 
+h1 {
+  position: absolute;
+  left: 30px;
+  top: 20px;
+  color: gray;
+  opacity: .3;
+
+}
+
 nav {
   position: relative;
   background-color: black;
+  padding: 1px;
   height: 38px;
-}
-
-nav .logo {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 15px;
-  height: 80px;
-  width: 80px;
-  background-size: contain;
-  background-image: url('http://cyrodkm6dr33s0xkcsk5j1ds.wpengine.netdna-cdn.com/wp-content/themes/impacthub/assets/img/impact-hub-logo.png');
-  background-repeat: no-repeat;
 }
 
 nav .burger {
@@ -55,3 +54,4 @@ nav .burger {
   color: white;
   text-decoration: none;
 }
+
