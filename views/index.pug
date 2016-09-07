@@ -9,8 +9,9 @@ html(lang='en')
     link(rel='apple-touch-icon', href='apple-touch-icon.png')
     link(rel='stylesheet' type='text/css' href='/styles/normalize.css')
     link(rel='stylesheet' type='text/css' href='/styles/styles.css')
+    script(src="../slideshow.js")
     script(src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
-    script(src="./slideshow.js")
+    script(src="./scripts/slideshow.js")
   body
     nav
       a.logo(href='')
@@ -23,9 +24,8 @@ html(lang='en')
           a(href='') Join
           a(href='') Omi Gallery
     h1 Oakland 
-     nav.navbar
-      .container-fluid
-        .navbar-header
+     div
+        .header
           button(src='/main') Omi Gallery
           button(src='/') Join
   div 
@@ -34,8 +34,8 @@ html(lang='en')
         .numbertext 
         img(src='./images/pic1.jpg', name='slide', style='width:100%')
         .text 
-    a.prev(onclick='plusSlides(-1)') <
-    a.next(onclick='plusSlides(1)') >
+    a.prev(onclick='movetoNext()') <
+    a.next(onclick='') >
 
 
   div
@@ -65,5 +65,14 @@ html(lang='en')
     .container
       h2 Section 6 Heading
       p Section 6 Text
+  div
+  section.footer
+    .container
+      h2 Footer
+      input(type='text', placeholder='name')
+      input(type='text', placeholder='email') 
+      input(type='submit', name='Sign Up')
+
+
 
 

@@ -10,7 +10,7 @@ html, body {
 
 h1 {
   position: absolute;
-  left: 100px;
+  left: 30px;
   top: 20px;
   color: gray;
   opacity: .3;
@@ -45,6 +45,12 @@ nav {
 
 div {
   text-align: center;
+}
+
+.header {
+  top: 150px;
+  margin: 10px;
+  position: center;
 }
 
 nav .logo {
@@ -119,7 +125,7 @@ h1 {
   background-color: rgba(0,0,0,0.8);
   color: red;
   opacity: .4;
-  position: fixed;
+  position: relative;
 }
 
 /* Caption text */
@@ -143,19 +149,20 @@ h1 {
 }
 
 /* The dots/bullets/indicators */
-.dot {
+div .dot {
   cursor:pointer;
-  height: 50px;
-  width: 50px;
-  margin: 0 2px;
-  background-color: #bbb;
+  height: 20px;
+  width: 20px;
+  margin: 20 2px;
+  background-color: gray;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
+div .dot:hover {
+  cursor:pointer;
+  background-color: black;
 }
 
 /* Fading animation */
@@ -221,12 +228,16 @@ section.module.parallax h1 {
 }
 section.module.parallax-1 {
   background-image: url("/images/pic1.jpg");
+  margin: 20px;
+
 }
 section.module.parallax-2 {
   background-image: url("/images/pic2.jpg");
+  margin: 20px;
 }
 section.module.parallax-3 {
   background-image: url("/images/pic3.jpg");
+  margin: 20px;
 }
 
 @media all and (min-width: 600px) {
@@ -244,4 +255,14 @@ section.module.parallax-3 {
   section.module.parallax h1 {
     font-size: 160px;
   }
+}
+
+
+/*footer*/
+
+section.footer {
+  background-color: black;
+  color: white;
+  margin: 20px;
+  padding: 20px;
 }
