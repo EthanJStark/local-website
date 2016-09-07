@@ -2,6 +2,8 @@ $(function(){
   $('.carousel > .carousel-arrow').on('click', function(event){
     event.preventDefault()
 
+    var arrayPictures = ['images/pic1.jpg', 'images/pic2.jpg', 'images/pic3.jpg']
+
     var arrow = $(this)
     if( arrow.is('.carousel-arrow-left')){
       slideLeft()
@@ -13,6 +15,7 @@ $(function(){
   })
 
   var slideLeft = function(){
+    if ( $('#pic1 ' ) 
     $('.carousel > .carousel-showing').removeClass('carousel-showing')
   }
 })

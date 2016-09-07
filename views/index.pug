@@ -3,13 +3,15 @@ extends layout.pug
 block content
   h1 Index Page
 
+  -  var arrayPictures = ['images/pic1.jpg', 'images/pic2.jpg', 'images/pic3.jpg']
+
   .carousel
-    .carousel-image.carousel-showing
-      img(src='/images/pic1.jpg')
-    .carousel-image
-      img(src='/images/pic2.jpg')
-    .carousel-image
-      img(src='/images/pic3.jpg')
+    #pic1.carousel-image.carousel-showing
+      img(src= arrayPictures[0])
+    #pic2.carousel-image
+      img(src= arrayPictures[1])
+    #pic3.carousel-image
+      img(src= arrayPictures[2])
     a.carousel-arrow.carousel-arrow-left(href='')='<'
     a.carousel-arrow.carousel-arrow-right(href='')='>'
-
+    
