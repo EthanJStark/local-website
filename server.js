@@ -22,4 +22,9 @@ app.get('/main', (request, response) => {
   response.render('main')
 })
 
+app.get('/gallery', (request, response) => {
+  response.render('omi')
+})
+
+
 app.listen(process.env.PORT || 3000)

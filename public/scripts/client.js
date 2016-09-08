@@ -53,6 +53,7 @@ $(function(){
         .removeClass('carousel-stage-left')
         .addClass('carousel-center-stage') 
     }, 50) 
+
   }
 
   var slideLeft = function(){
