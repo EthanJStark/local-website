@@ -4,7 +4,18 @@ app.set('view engine', 'pug')
 app.use(express.static('public'))
 
 app.get('/', (request, response) => {
-  response.render('index')
+  const carouselImages = [
+    '/images/pic1.jpg', 
+    '/images/pic2.jpg', 
+    '/images/pic3.jpg',
+  ]
+  response.render('index', {
+    carouselImages: carouselImages
+  })
+})
+
+app.get('/layout', (request, response) => {
+  response.render('layout')
 })
 
 app.get('/main', (request, response) => {
