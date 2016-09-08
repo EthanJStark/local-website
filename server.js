@@ -5,8 +5,8 @@ app.use(express.static('public'))
 
 app.get('/', (request, response) => {
   const carouselImages = [
-    '/images/pic1.jpg', 
-    '/images/pic2.jpg', 
+    '/images/pic1.jpg',
+    '/images/pic2.jpg',
     '/images/pic3.jpg',
   ]
   response.render('index', {
