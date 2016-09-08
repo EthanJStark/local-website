@@ -4,7 +4,7 @@ block content
 
   .carousel
     for image, index in carouselImages
-      .carousel-image(class: className)
+      .carousel-image
         img(src=image)
     .carousel-arrow.carousel-arrow-left
       a(href='')='<'
@@ -18,14 +18,23 @@ block content
       h1 Content
   .section-2
     .container
-      h3 Column 1
-      h3 Column 2
-  .section-3
-    .flexbox-container
-      h3 Column 1
-      h3 Column 2
-      h3 Column 3
-      h3 Column 4
+      h1.main-header Featured News
+      .upcoming-events-header 
+        button UPCOMING EVENTS
+      .upcoming-events
+        mixin event(imageUrl, title)
+          .event-description
+            img.event-description-image(src=imageUrl)
+            .event-description-title= title
+        +event("/event1.png", "IHO WORKTRADE INFO SESSION – Q4!")
+        +event("/event1.png", "COCAP 2016 – RADICAL REDISTRIBUTION OF WEALT")
+        +event("/event1.png", "THE SWEETWATER SESSIONS, VOL. 5 “BLACK IS BLUE”")
+        +event("/event1.png", "CHRISTEN LIEN CONCERT – ELPIS IS COMING")
+        //- for event in events
+        //-   .event-description
+        //-     img.event-description-image(src=event.imageUrl)
+        //-     .event-description-title= event.title
+      
   .section-4
     .container
       h1 Content
