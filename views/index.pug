@@ -1,8 +1,6 @@
 extends layout.pug 
 
 block content
-  h1 Index Page
-
 
   .carousel
     for image, index in carouselImages
@@ -15,3 +13,37 @@ block content
     .carousel-dots
       for image in carouselImages
         a.carousel-dot(href="")
+  .section-1
+    .container
+      h1 Content
+  .section-2
+    .container
+      h3 Column 1
+      h3 Column 2
+  .section-3
+    .flexbox-container
+      h3 Column 1
+      h3 Column 2
+      h3 Column 3
+      h3 Column 4
+  .section-4
+    .container
+      h1 Content
+  .section-5
+    iframe(width="560" height="315" src="https://www.youtube.com/embed/pmTm77JKPho" frameborder="0" allowfullscreen)
+  .section-2
+    .container
+      h3 Column 1
+      h3 Column 2
+  .section-3
+    .flexbox-container
+      h3 Column 1
+      h3 Column 2
+      h3 Column 3
+      h3 Column 4
+  .section-2
+    .container
+      h3 Column 1
+      h3 Column 2
+      
+        
