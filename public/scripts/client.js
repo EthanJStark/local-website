@@ -20,8 +20,9 @@ $(function(){
 })
 
 $(document).ready(function() {
-  $('.burger').hover(function() {
-    $('.nav-dropdown').slideDown(200)
+  $('.burger').click(function(event) {
+    event.preventDefault()
+    $('.nav-dropdown').slideToggle('fast')
   })
 })
 
