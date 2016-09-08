@@ -28,12 +28,32 @@ html(lang='en')
     block content
   .flexbox-container.footer
     div
-      h3 Sign up for our newsletter
-      form(action='/my-handling-form-page', method='post')
+      h2 Sign up for our newsletter
+      form(action='/newsletter', method='post')
         div
           label(for='mail') E-mail:
           input#mail(type='email', name='user_mail')
         .button
           button(type='submit') Subscribe
-    h3 Column 2
+      h2 Connect With Us
+      .flexbox-container
+        
+    div
+      h2 Contact Us
+      form(action='/contact', method='post')
+        div
+          label(for='full name') Name:
+          input#name(type='text', name='full_name')
+        div
+          label(for='mail') E-mail:
+          input#mail(type='email', name='user_mail')
+        div
+          label(for='subject') Subject:
+          input#subject(type='text', name='subject')
+        div
+          label(for='msg') Message:
+          textarea#msg(name='user_message')
+        .button
+          button(type='submit') Send your message
+
     
