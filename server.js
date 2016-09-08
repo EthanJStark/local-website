@@ -14,8 +14,8 @@ app.get('/', (request, response) => {
   })
 })
 
-app.get('/layout', (request, response) => {
-  response.render('layout')
+app.get('/footer', (request, response) => {
+  response.render('footer')
 })
 
 app.get('/main', (request, response) => {
