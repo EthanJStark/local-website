@@ -49,6 +49,10 @@ nav .burger {
   display: none;
 }
 
+.nav-dropdown:hover {
+  display: 
+}
+
 .nav-dropdown > a {
   display: block;
   padding: .5em;

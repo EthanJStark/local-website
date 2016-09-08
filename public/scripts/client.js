@@ -20,8 +20,8 @@ $(function(){
 })
 
 $(document).ready(function() {
-  $('.burger').click(function() {
-    $('.nav-dropdown').slideToggle('fast')
+  $('.burger').hover(function() {
+    $('.nav-dropdown').slideDown(200)
   })
 })
 
