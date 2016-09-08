@@ -413,6 +413,15 @@ body { margin: 0; }
   text-align: center;
 }
 
-.section-5 {
+.section-5, .section-6{
+  text-align: center;
+  background-color: black;
+}
+
+/*JOIN PUG*/
+
+.section3-2 {
+  columns: 3 300px;
+  margin: 20px;
   text-align: center;
 }

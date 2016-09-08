@@ -14,6 +14,17 @@ app.get('/', (request, response) => {
   })
 })
 
+app.get('/join', (request, response) => {
+  const carouselImages = [
+    '/images/pic1.jpg',
+    '/images/pic2.jpg',
+    '/images/pic3.jpg',
+  ]
+  response.render('join', {
+    carouselImages: carouselImages
+  })
+})
+
 app.get('/layout', (request, response) => {
   response.render('layout')
 })
