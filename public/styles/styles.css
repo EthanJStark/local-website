@@ -70,6 +70,9 @@ h1 {
   bottom: 8px;
   width: 100%;
   text-align: center;
+}  
+.nav-dropdown {
+  position:absolute;
   top: 38px;
   right: 0px;
   padding: 1em;
@@ -79,10 +82,13 @@ h1 {
   display: none;
 }
 
-.nav-dropdown:hover {
-  display: 
-
+.nav-dropdown > a {
+  display: block;
+  padding: .5em;
+  color: white;
+  text-decoration: none;
 }
+
 
 /* The dots/bullets/indicators */
 div .dot {
