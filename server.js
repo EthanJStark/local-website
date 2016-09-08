@@ -9,8 +9,27 @@ app.get('/', (request, response) => {
     '/images/pic2.jpg',
     '/images/pic3.jpg',
   ]
+  const events = [
+    {
+      imageUrl: "/event1.png",
+      title: "IHO WORKTRADE INFO SESSION – Q4!",
+    },
+    {
+      imageUrl: "/event1.png",
+      title: "COCAP 2016 – RADICAL REDISTRIBUTION OF WEALTH THROUGH IMPACT INVESTING",
+    },
+    {
+      imageUrl: "/event1.png",
+      title: "THE SWEETWATER SESSIONS, VOL. 5 “BLACK IS BLUE”",
+    },
+    {
+      imageUrl: "/event1.png",
+      title: "CHRISTEN LIEN CONCERT – ELPIS IS COMING",
+    },
+  ]
   response.render('index', {
-    carouselImages: carouselImages
+    carouselImages: carouselImages,
+    events: events,
   })
 })
 

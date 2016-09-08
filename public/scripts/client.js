@@ -1,5 +1,4 @@
 $(function(){
-  
   var numberOfImages = $('.carousel .carousel-image').length;
 
   $('.carousel .carousel-image:first-child').addClass('carousel-center-stage')
@@ -56,13 +55,13 @@ $(function(){
 
   }
 
-  var slideLeft = function(){
+  var slideRight = function(){
     var currentImageIndex = $('.carousel > .carousel-center-stage').index()
     var nextImageIndex = (currentImageIndex + 1) % numberOfImages;
     scrollToImage(nextImageIndex, false)
   };
 
-  var slideRight = function(){
+  var slideLeft = function(){
     var currentImageIndex = $('.carousel > .carousel-center-stage').index()
     var nextImageIndex = (currentImageIndex - 1) 
     if (nextImageIndex < 0) nextImageIndex += numberOfImages

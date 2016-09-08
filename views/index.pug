@@ -4,7 +4,7 @@ block content
 
   .carousel
     for image, index in carouselImages
-      .carousel-image(class: className)
+      .carousel-image
         img(src=image)
     .carousel-arrow.carousel-arrow-left
       a(href='')='<'
@@ -22,18 +22,19 @@ block content
       .upcoming-events-header 
         button UPCOMING EVENTS
       .upcoming-events
-        .event-description
-          .event-description-image
-          .event-description-title IHO WORKTRADE INFO SESSION – Q4!
-        .event-description
-          .event-description-image
-          .event-description-title COCAP 2016 – RADICAL REDISTRIBUTION OF WEALTH THROUGH IMPACT INVESTING
-        .event-description
-          .event-description-image
-          .event-description-title THE SWEETWATER SESSIONS, VOL. 5 “BLACK IS BLUE”
-        .event-description
-          .event-description-image
-          .event-description-title CHRISTEN LIEN CONCERT – ELPIS IS COMING
+        mixin event(imageUrl, title)
+          .event-description
+            img.event-description-image(src=imageUrl)
+            .event-description-title= title
+        +event("/event1.png", "IHO WORKTRADE INFO SESSION – Q4!")
+        +event("/event1.png", "COCAP 2016 – RADICAL REDISTRIBUTION OF WEALT")
+        +event("/event1.png", "THE SWEETWATER SESSIONS, VOL. 5 “BLACK IS BLUE”")
+        +event("/event1.png", "CHRISTEN LIEN CONCERT – ELPIS IS COMING")
+        //- for event in events
+        //-   .event-description
+        //-     img.event-description-image(src=event.imageUrl)
+        //-     .event-description-title= event.title
+      
   .section-4
     .container
       h1 Content

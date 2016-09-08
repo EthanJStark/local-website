@@ -322,12 +322,17 @@ body { margin: 0; }
   }   
 }
 .carousel {
+  display: none;
   background-color: black;
   height: 300px;
   position: relative;
   overflow: hidden;
   margin-top: 40px;
-  z-index: -3;
+}
+@media (min-width: 768px){
+  .carousel{
+    display: block;
+  }
 }
 
 .carousel > .carousel-image {
@@ -447,7 +452,7 @@ body { margin: 0; }
 
 @media (min-width: 992px){
   .event-description {
-    width: 25%;
+    width: 25%;""
   }
 }
 
