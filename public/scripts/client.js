@@ -1,8 +1,19 @@
 $(function(){
+  
+  var numberOfImages = $('.carousel .carousel-image').length;
+
+  $('.carousel .carousel-image:first-child').addClass('carousel-center-stage')
+  $('.carousel .carousel-dot:first-child').addClass('active')
+
+  $('.carousel > .carousel-dots > .carousel-dot').on('click', function(event){
+    event.preventDefault();
+    var dot = $(this);
+    var index = dot.index();
+    scrollToImage(index)
+  });
+
   $('.carousel > .carousel-arrow').on('click', function(event){
     event.preventDefault()
-
-    var arrayPictures = ['images/pic1.jpg', 'images/pic2.jpg', 'images/pic3.jpg']
 
     var arrow = $(this)
     if( arrow.is('.carousel-arrow-left')){
@@ -14,22 +25,59 @@ $(function(){
     }
   })
 
-  var slideLeft = function(){
+  var slideTimeout=0;
 
-    $('.carousel > .carousel-showing').removeClass('carousel-showing')
+
+  var scrollToImage = function(imageIndex, slideRight){
+    var currentImage = $('.carousel > .carousel-center-stage')
+    var nextImage = $('.carousel > .carousel-image:nth-child('+(imageIndex+1)+')')
+    if (currentImage.index() === nextImage.index()) return;
+
+    var dot = $('.carousel > .carousel-dots > .carousel-dot:nth-child('+(imageIndex+1)+')')
+    dot.addClass('active').siblings().removeClass('active')
+    nextImage
+      .removeClass('carousel-image-animated')
+      .removeClass('carousel-center-stage')
+      .removeClass(slideRight ? 'carousel-stage-right' : 'carousel-stage-left')
+      .addClass(slideRight ? 'carousel-stage-left' : 'carousel-stage-right')
+
+    slideTimeout = setTimeout(function(){
+      currentImage
+        .addClass('carousel-image-animated')
+        .removeClass('carousel-center-stage')
+        .removeClass(slideRight ? 'carousel-stage-left' : 'carousel-stage-right')
+        .addClass(slideRight ? 'carousel-stage-right' : 'carousel-stage-left')
+      nextImage
+        .addClass('carousel-image-animated')
+        .removeClass('carousel-stage-right')
+        .removeClass('carousel-stage-left')
+        .addClass('carousel-center-stage') 
+    }, 50) 
+
   }
+
+  var slideLeft = function(){
+    var currentImageIndex = $('.carousel > .carousel-center-stage').index()
+    var nextImageIndex = (currentImageIndex + 1) % numberOfImages;
+    scrollToImage(nextImageIndex, false)
+  };
+
+  var slideRight = function(){
+    var currentImageIndex = $('.carousel > .carousel-center-stage').index()
+    var nextImageIndex = (currentImageIndex - 1) 
+    if (nextImageIndex < 0) nextImageIndex += numberOfImages
+    nextImageIndex = nextImageIndex % numberOfImages;
+    scrollToImage(nextImageIndex, true)
+  };
+
 })
 
 
-// const carousel = () => {
-//   const  x = document.getElementsByClassName("mySlides");
-//   for (index = 0; index < x.length; index++) {
-//     x[index].style.display = "none";
-//   }
-//   myIndex++;
-//   if (myIndex > x.length) {
-//     myIndex = 1
-//   }
-//   x[myIndex - 1].style.display = "block";
-//   setTimeout(carousel, 2000); // Change image every 2 seconds
-// }
+
+
+$(function() {
+  $('.burger').click(function(event) {
+    event.preventDefault()
+    $('.nav-dropdown').slideToggle('fast')
+  })
+})
