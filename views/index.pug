@@ -18,28 +18,26 @@ block content
       h1 COME FOR COWORKING, STAY FOR COMMUNITY
       p Impact Hub Oakland is a member-based coworking space and event venue for entrepreneurs creating positive impact.
     .mission2
-      h2 
-        a(href='') Download a Free Day Pass
-      h2 
-        a(href='') Schedule a Tour
+      h2 Download a Free Day Pass
+      h2 Schedule a Tour
   .featured
     .featured2
       h1.main-header Featured Events
-      //- .upcoming-events-header 
-      //-   button UPCOMING EVENTS
     .upcoming-events
       mixin event(imageUrl, title)
         .event-description
           img.event-description-image(src=imageUrl)
           .event-description-title= title
-      +event("/images/event1.jpg", "IHO WORKTRADE INFO SESSION – Q4!")
-      +event("/images/event2.jpg", "COCAP 2016 – RADICAL REDISTRIBUTION OF WEALT")
-      +event("/images/event3.jpg", "THE SWEETWATER SESSIONS, VOL. 5 “BLACK IS BLUE”")
-      +event("/images/event4.jpg", "CHRISTEN LIEN CONCERT – ELPIS IS COMING")
+      +event("/images/event11.jpg", "IHO WORKTRADE INFO SESSION – Q4!")
+      +event("/images/event12.jpg", "COCAP 2016 – RADICAL REDISTRIBUTION OF WEALTH")
+      +event("/images/event13.jpg", "THE SWEETWATER SESSIONS, VOL. 5 “BLACK IS BLUE”")
+      +event("/images/event14.jpg", "CHRISTEN LIEN CONCERT – ELPIS IS COMING")
       
   .book-host
-    a.book(href='') BOOK A CONFERENCE ROOM
-    a.book(href='') HOST YOUR EVENT HERE
+    .banner-buttons3
+      h2 BOOK A CONFERENCE ROOM
+    .banner-buttons3
+      h2 HOST YOUR EVENT HERE
   .movie
     iframe(width="700" height="450" src="https://www.youtube.com/embed/pmTm77JKPho" frameborder="0" allowfullscreen)
   .featured

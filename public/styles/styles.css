@@ -53,23 +53,63 @@ nav {
   background-color: black;
   padding: 1px;
   height: 38px;
+  color: white;
+  letter-spacing: 2px;
+}
+@media (max-width: 767px){
+  nav .burger {
+    display: block;
+    position: absolute;
+    top: 7px;
+    right: 15px;
+    height: 20px;
+    width: 20px;
+  }
+
+  nav .burger > .burger-bar {
+    border-bottom: 2px solid white;
+    margin-top: 4px;
+  }
+
+  nav .nav-links {
+    position:absolute;
+    top: 38px;
+    right: 0px;
+    padding: 1em;
+    border: 1px solid;
+    border-color: #b77c82;
+    background-color: #89131f;
+    display: none;
+    z-index: 1;
+  }
+
+  nav .nav-links > a {
+    display: block;
+    padding: .5em;
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+  }
 }
 
-nav .burger {
-  display: block;
-  position: absolute;
-  top: 7px;
-  right: 15px;
-  height: 20px;
-  width: 20px;
+@media (min-width: 768px){
+  nav .burger{
+    display: none;
+  }
+  nav .nav-links{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  nav .nav-links > a{
+    margin-right  .upcoming-events-image2: 1em
+  }
 }
-
-.burger > .burger-bar {
-  border-bottom: 2px solid white;
-  margin-top: 4px;
-}
-
-
 
 .slides {
   top: 100px;
@@ -96,24 +136,6 @@ nav .burger {
   width: 100%;
   text-align: center;
 }  
-.nav-dropdown {
-  position:absolute;
-  top: 38px;
-  right: 0px;
-  padding: 1em;
-  border: 1px solid;
-  border-color: #b77c82;
-  background-color: #89131f;
-  display: none;
-  z-index: 1;
-}
-
-.nav-dropdown > a {
-  display: block;
-  padding: .5em;
-  color: white;
-  text-decoration: none;
-}
 
 
 /* The dots/bullets/indicators */
@@ -229,12 +251,12 @@ section.module.parallax.parallax-7 {
     font-size: 20px;
   }
   section.module.parallax h1 {
-    font-size: 96px;
+    font-size: 66px;
   }
 }
 @media all and (min-width: 960px) {
   section.module.parallax h1 {
-    font-size: 160px;
+    font-size: 88px;
     align-items: center;
   }
 }
@@ -254,6 +276,10 @@ img.gallery {
 section.footer p {
   line-height: 30px;
   text-align: left;
+}
+
+.footer-logo {
+  display: block;
 }
 
 *, *:before, *:after {
@@ -418,7 +444,7 @@ body { margin: 0; }
   margin: 40px;
 }
 
-.mission2 a{
+.mission2 h2{
   color: #a6a6a6
 }
 
@@ -440,13 +466,30 @@ body { margin: 0; }
   }
 }
 
+.featured3 {
+  
+}
+
+@media (min-width: 768px){
+  .featured3 {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
 .book-host {
   background-image: url('/images/pingpong.jpg');
   background-position: center;
-  height: 300pux;
+  height: 300px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+@media (min-width: 768px){
+  .book-host .book{
+    bottom: 0;
+  }
 }
 
 .movie {
@@ -459,7 +502,7 @@ body { margin: 0; }
   text-align: center;
 }
 
-.event-description{
+.event-description {
   display: inline-block;
   /*outline: 1px dotted green;*/
   width: 50%;
@@ -468,32 +511,33 @@ body { margin: 0; }
   padding: 10px;
 }
 
-.event-description.gallery{
+
+@media (min-width: 992px) {
+  .event-description {
+    width: 25%;
+  }
+}
+
+.event-description.gallery {
   display: inline-block;
   outline: 1px solid gray;
   padding-bottom: 200px;
+  margin: 10px;
 }
 
-@media (min-width: 992px){
-  .event-description {
-    width: 100%;""
-  }
-}
-
-@media (min-width: 992px){
+@media (min-width: 992px) {
  .event-description.gallery {
-    width: 100%;""
+    width: 100%;
   }
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
   .event-description.gallery {
     width: 33%;
   }
 }
 
-.event-description-image{
-  height: 200px;
+.event-description-image {
   width: 100%;
   background: black;
 }
@@ -533,17 +577,50 @@ body { margin: 0; }
 }
 
 .event-description2{
-  font-size: 20px;
-  text-align: center;
+  text-align: left;
+  padding: 0 10px 10px 10px;
+  width: 25%;
+}
+
+.event-description2 h1{
+  margin: 0;
+}
+
+.join-image2 {
+  width: 75%;
+  background-image: url('/images/individual-coworking-membership.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.join-image3 {
+  width: 75%;
+  background-image: url('/images/orgmembership.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.join-image4 {
+  width: 75%;
+  background-image: url('/images/worktrade.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
 .footer {
-  background-color: black;
+  background-image: url('/images/chalkboard.jpg');
   color: white;
 }
 
-.footer form {
+.footer textarea, input {
+  background: transparent;
+  color: white;
 }
+
+.form {
+  margin: 7px 0px;
+}
+
 @media (min-width: 768px){
   .footer {
     display: flex;
@@ -588,8 +665,9 @@ body {
   margin-top: 50px;
 }
 
-section.form {
+section.form1 input {
   width: 100%;
+  color: black;
 }
 
 section.socialmediafooter {
@@ -623,10 +701,74 @@ img.icon {
   display: inline-block;
   padding-bottom: 200px;
   margin-top: 40px;
-
 }
 
-iframe {
+iframe, section.center-movie {
   margin: 40px;
   text-align: center;
+}
+
+.joinbanner {
+  background-image: url('/images/joinbanner.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 380px;
+}
+
+.banner-buttons {
+  text-align: center;
+}
+
+.banner-buttons h2 {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  outline: 3px solid black;
+  width: auto;
+}
+
+.banner-buttons h2:hover {
+  background-color: #800000;
+  color: white;
+  outline: none;
+}
+
+.banner-buttons2 h2 {
+  display: inline-block;
+  padding: 10px;
+  width: auto;
+  color: white;
+  background-color: #171d22;
+}
+
+.banner-buttons2 h2:hover {
+  background-color: #800000;
+  color: white;
+  outline: none;
+}
+
+.banner-buttons3 {
+  position: relative;
+  bottom: 40px;
+}
+
+.banner-buttons3 h2 {
+  display: inline-block;
+  padding: 10px;
+  width: auto;
+  color: white;
+  background: transparent;
+  outline: 3px solid white;
+}
+
+.banner-buttons3 h2:hover {
+  background-color: #800000;
+  color: white;
+  outline: none;
+}
+
+.spacer {
+  height: 40px;
+  border-top: solid black 3px;
+  border-bottom: solid black 3px;
 }

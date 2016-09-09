@@ -33,6 +33,10 @@ app.get('/', (request, response) => {
   })
 })
 
+app.get('/join', (request, response) => {
+  response.render('join')
+})
+
 app.get('/footer', (request, response) => {
   response.render('footer')
 })
@@ -69,7 +73,7 @@ app.get('/gallery', (request, response) => {
   ]
 
   const exhibits = [
-    '/images/exhibit1.jpg',
+    '/images/exhibit1.png',
     '/images/exhibit2.jpg',
     '/images/exhibit3.jpg',
     '/images/exhibit4.jpg',
