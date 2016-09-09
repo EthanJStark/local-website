@@ -13,46 +13,57 @@ block content
     .carousel-dots
       for image in carouselImages
         a.carousel-dot(href="")
-  .section-1
-    .container
-      h1 Content
-  .section-2
-    .container
+  .mission
+    div
+      h1 COME FOR COWORKING, STAY FOR COMMUNITY
+      p Impact Hub Oakland is a member-based coworking space and event venue for entrepreneurs creating positive impact.
+    div
+      h2 
+        a(href='') Download a Free Day Pass
+      h2 
+        a(href='') Schedule a Tour
+  .featured
+    .featured2
       h1.main-header Featured News
       .upcoming-events-header 
         button UPCOMING EVENTS
-      .upcoming-events
-        mixin event(imageUrl, title)
-          .event-description
-            img.event-description-image(src=imageUrl)
-            .event-description-title= title
-        +event("/event1.png", "IHO WORKTRADE INFO SESSION – Q4!")
-        +event("/event1.png", "COCAP 2016 – RADICAL REDISTRIBUTION OF WEALT")
-        +event("/event1.png", "THE SWEETWATER SESSIONS, VOL. 5 “BLACK IS BLUE”")
-        +event("/event1.png", "CHRISTEN LIEN CONCERT – ELPIS IS COMING")
+    .upcoming-events
+      mixin event(imageUrl, title)
+        .event-description
+          img.event-description-image(src=imageUrl)
+          .event-description-title= title
+      +event("/event1.png", "IHO WORKTRADE INFO SESSION – Q4!")
+      +event("/event1.png", "COCAP 2016 – RADICAL REDISTRIBUTION OF WEALT")
+      +event("/event1.png", "THE SWEETWATER SESSIONS, VOL. 5 “BLACK IS BLUE”")
+      +event("/event1.png", "CHRISTEN LIEN CONCERT – ELPIS IS COMING")
         //- for event in events
         //-   .event-description
         //-     img.event-description-image(src=event.imageUrl)
         //-     .event-description-title= event.title
       
-  .section-4
-    .container
-      h1 Content
-  .section-5
-    iframe(width="560" height="315" src="https://www.youtube.com/embed/pmTm77JKPho" frameborder="0" allowfullscreen)
-  .section-2
-    .container
-      h3 Column 1
-      h3 Column 2
-  .section-3
-    .flexbox-container
-      h3 Column 1
-      h3 Column 2
-      h3 Column 3
-      h3 Column 4
-  .section-2
-    .container
-      h3 Column 1
-      h3 Column 2
-      
-        
+  .book-host
+    a.book(href='') BOOK A CONFERENCE ROOM
+    a.book(href='') HOST YOUR EVENT HERE
+  .movie
+    iframe(width="700" height="450" src="https://www.youtube.com/embed/pmTm77JKPho" frameborder="0" allowfullscreen)
+  .featured
+    .featured2
+      h1.main-header Featured News
+      .upcoming-events-header 
+        button UPCOMING EVENTS
+    .upcoming-events
+      mixin event(imageUrl, title)
+        .event-description
+          img.event-description-image(src=imageUrl)
+          .event-description-title= title
+      +event("/event1.png", "IHO WORKTRADE INFO SESSION – Q4!")
+      +event("/event1.png", "COCAP 2016 – RADICAL REDISTRIBUTION OF WEALT")
+      +event("/event1.png", "THE SWEETWATER SESSIONS, VOL. 5 “BLACK IS BLUE”")
+      +event("/event1.png", "CHRISTEN LIEN CONCERT – ELPIS IS COMING")
+  .youth
+    h2 CHECK OUT THE IMPACT YOUTH HUB
+    .youth2
+      img(src='/images/youth.jpg')
+      div
+        p Impact HUB Oakland has chosen United Roots and Youth SEED to launch Youth HUB, a collaborative workspace for young social innovators, and provides programming that will create a pipeline for low-income youth of color to participate in creating business enterprises that address social and environmental issues.
+        a(href='') LEARN MORE

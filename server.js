@@ -5,9 +5,9 @@ app.use(express.static('public'))
 
 app.get('/', (request, response) => {
   const carouselImages = [
-    '/images/pic1.jpg',
-    '/images/pic2.jpg',
-    '/images/pic3.jpg',
+    '/images/index1.jpg',
+    '/images/index2.jpg',
+    '/images/index3.jpg',
   ]
   const events = [
     {
