@@ -1,109 +1,103 @@
-doctype html
-html(lang='en')
-  head
-    meta(charset='utf-8')
-    meta(http-equiv='x-ua-compatible', content='ie=edge')
-    title Impact Hub Oakland
-    meta(name='description', content='')
-    meta(name='viewport', content='width=device-width, initial-scale=1')
-    link(rel='apple-touch-icon', href='apple-touch-icon.png')
-    link(rel='stylesheet' type='text/css' href='/styles/normalize.css')
-    link(rel='stylesheet' type='text/css' href='/styles/styles.css')
-    script(src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
-    script(src="/scripts/client.js")
+extends layout.pug 
+
+block content
+
   body
-    nav
-      a.logo(href='')
 
-      a.burger(href='')
-        .burger-bar
-        .burger-bar
-        .burger-bar
-        .nav-dropdown
-          a(href='') Join
-          a(href='') Omi Gallery
-  .header
-    h1 Oakland 
-
-
-  div
-  section.module.parallax.parallax-1
-    .container
-      h1 IMPACT HUB
-  section.module.content
-    .container
-      img.omilogo(src='/images/logo.png')
-      p Omi Gallery is a interactive space for artisans, theorists, creative entrepreneurs, organizers, and students designed to feature diverse voices and genres that are artistically and socially relevant. Our programming intentionally nourishes partnerships between creatives, businesses, institutions, and the public. Omi Gallery presents Invite Only, new and traveling visual, sound, and performance works by emerging and established curators and artists, as well as concept-driven shared exhibitions in collaboration with other cultural institutions. We are located in Oakland at Impact Hub Oakland and in San Francisco at ThoughtWorks in SoMA.
-      
-      Gallery Director: Ashara Ekundayo
-      br
-      Gallery Manager: Melonie Green
-
-
-      .columnsContainer
-        .leftColumn
-          h3 OMI GALLERY
-          p 2323 Broadway | Oakland, 94612 Mis Raices/My Roots August 5 - September 30, 2016 13 new prints by Mexican artist Jhovany Rodriguez De Ala. In this show, Jhovany talks about Art as Informant by showing us our history and allowing us to discover and reconstruct our identity through reflections that demand us images that speak of humanity and identity struggles.
-        .rightColumn
-          img(src='./images/Myroots_postcard_back.png' width='300px' height='400px')
+  .carousel
+    for image, index in galleryImages
+      .carousel-image
+        img(src=image)
+    .carousel-arrow.carousel-arrow-left
+      a(href='')='<'
+    .carousel-arrow.carousel-arrow-right
+      a(href='')='>'
+    .carousel-dots
+      for image in galleryImages
+        a.carousel-dot(href="")
+  .gallery
+    .gallery2
+      img(src='/images/logo.png')
+    .galleryText
+      p Omi Gallery is a interactive space for artisans, theorists, creative entrepreneurs, organizers, and students designed to feature diverse voices and genres that are artistically and socially relevant. Our programming intentionally nourishes partnerships between creatives, businesses, institutions, and the public. Omi Gallery presents Invite Only, new and traveling visual, sound, and performance works by emerging and established curators and artists, as well as concept-driven shared exhibitions in collaboration with other cultural institutions. We are located in Oakland at Impact Hub Oakland and in San Francisco at ThoughtWorks in SoMA. Gallery Director: Ashara Ekundayo | Gallery Manager: Melonie Green
   
-  section.module.parallax.parallax-2
+  section.module.parallax.parallax-6
     .container
-      h1 IMPACT HUB
-  section.module.content
+      h1 CURRENT EXHIBITS
+  .featured
+    .featured2
+      p.event-description2 OMI GALLERY 2323 Broadway | Oakland, 94612 Mis Raices/My Roots August 5 - September 30, 2016 13 new prints by Mexican artist Jhovany Rodriguez De Ala. In this show, Jhovany talks about Art as Informant by showing us our history and allowing us to discover and reconstruct our identity through reflections that demand us images that speak of humanity and identity struggles.
+      .upcoming-events-image
+        img.gallery(src='images/galleryevent1.png')
+    .featured2
+      p.event-description2 OMI GALLERY - UPPER LEVEL 2323 Broadway | Oakland, 94612 Watermelon Woman 3.0 August 5 - September 30, 2016 Watermelon Woman 3.0 is an interactive program where academic partners, artists of various mediums and creative technologies, and socially conscious venue partners unite to pay homage, celebrate and highlight the cultural relevance of the legendary film, Watermelon Woman by filmmaker Cheryl Dunye
+      .upcoming-events-image
+        img.gallery(src='images/galleryimage2.jpg')
+    .featured2
+      p.event-description2 OMI GALLERY - ThoughtWorks SF 814 Mission St., 5th Floor | SF, 94103 "Black Powered" Paintings by Mahader Tesfai July 8 - Sept 30, 2016 This exhibit is made up of a new collection of black and gold paintings based on found objects that explore the relationship between technology and displacement.
+      .upcoming-events-image
+        img.gallery(src='images/galleryimage3.jpg')
+  section.module.parallax.parallax-6
     .container
-      img.omilogo(src='/images/logo.png')
-      p Omi Gallery is a interactive space for artisans, theorists, creative entrepreneurs, organizers, and students designed to feature diverse voices and genres that are artistically and socially relevant. Our programming intentionally nourishes partnerships between creatives, businesses, institutions, and the public. Omi Gallery presents Invite Only, new and traveling visual, sound, and performance works by emerging and established curators and artists, as well as concept-driven shared exhibitions in collaboration with other cultural institutions. We are located in Oakland at Impact Hub Oakland and in San Francisco at ThoughtWorks in SoMA.
-      
-      Gallery Director: Ashara Ekundayo
-      br
-      Gallery Manager: Melonie Green
-
-
-      .columnsContainer
-        .leftColumn
-          h3 OMI GALLERY
-          p 2323 Broadway | Oakland, 94612 Mis Raices/My Roots August 5 - September 30, 2016 13 new prints by Mexican artist Jhovany Rodriguez De Ala. In this show, Jhovany talks about Art as Informant by showing us our history and allowing us to discover and reconstruct our identity through reflections that demand us images that speak of humanity and identity struggles.
-        .rightColumn
-          img(src='./images/Myroots_postcard_back.png' width='300px' height='400px')
+      h1 EVENTS AT OMI GALLERY
+  .upcoming-events
+    for events in galleryEventPics
+      .event-description.gallery
+        img.event-description-image(src=events)
+        p The Sweetwater Sessions, Vol. 5 “Black Is Blue” Read More
+  
+  section.module.parallax.parallax-5
+    .container
+      h2 CREATIVE ARTS PRACTICE FELLOWSHIP
+    .container
+  p.info Omi Gallery hosts 2 cohorts of Creative Arts Practice (CAP) Fellows per calendar (Jan-June and July-Dec) who participate in supporting the daily operations, design, programming and communications management of Omi Gallery at Impact Hub Oakland and ThoughtWorks SF. CAP Fellows support the development and production of visual, educational, and performing arts programs including de/installation, artist relations, exhibition programming, media relations, digital/online marketing, and documentation. Presently CAP Fellows are Invite-Only and selected through the Work-Trade Program at Impact Hub Oakland
+  button.info(src='/') APPLY FOR THE CREATIVE ARTS FELLOWSHIP
 
   section.module.parallax.parallax-3
     .container
-      h1 SECTION 6
-  section.module.content
+      h2 VIDEOS FROM OMI GALLERY
+  iframe(width="560" height="315" src="https://www.youtube.com/embed/8x0iRGnPqws" frameborder="0" allowfullscreen)
+
+  section.module.parallax.parallax-8
     .container
-      h2 Blog Posts
-      p Section 6 Text
-  section.module.parallax.parallax-4
+      h2 STORIES FROM OMI GALLERY
+  .upcoming-stories
+    for story in stories
+      .event-description.gallery
+        img.event-description-image(src=story)
+        p The Sweetwater Sessions, Vol. 5 “Black Is Blue” Read More
+
+  section.module.parallax.parallax-7
     .container
-      h1 
-  section.module.content
+      h2 PAST EXHIBITS
+  .pastexhibits
+  for exhibit in exhibits
+      .event-description.gallery
+        img.event-description-image(src=exhibit)
+        p Past Events
+
+
+  section.module.parallax.parallax-6
     .container
-      h2 Youtube Videos
-      iframe(width="560" height="315" src="https://www.youtube.com/embed/fmR1A4xh2sk" frameborder="10px" allowfullscreen)
+      h1 CONTACT US
+  section.form
+    h4 Interested in the current exhibition and/or would like to show your work at Omi Gallery? Drop us a line with links to your portfolio.
+    h4 Name
+    input(type='text' placeholder='Your Name' style='width:100%') 
+    h4 Subject
+    input(type='text' placeholder='Subject' style='width:100%') 
+    h4 Email
+    input(type='text' placeholder='Your email' style='width:100%') 
+    h4 Message
+    textarea(rows='4', cols='50' style='width:100%')
+    div  
+      input(type='Submit' name='Send')
 
-  section.footer
-    .container
-      p Interested in the current exhibition and/or would like to show your work at Omi Gallery? Drop us a line with links to your portfolio.
-      p Name
-      input(type='text', placeholder='Your name') 
-      p Subject
-      input(type='text', placeholder='Subject')
-      p Email
-      input(type='text', placeholder='Email')
-      p Message
-      textarea(name='content', rows='10', cols='50', placeholder='Your Message') 
-      br
-      input(type='submit', name='Sign Up')
-
-
-
-  section.footer.socialmedia
-    a(href='twitter.com') FACEBOOK
-    a(href='facebook.com') TWITTER
-    a(href='facebook.com') TUMBLR
-    a(href='twitter.com') INSTAGRAM
-
-
-
-
+  section.socialmediafooter
+      img.icon(src='images/icons/facebook.png', style='width: 50px')
+      img.icon(src='images/icons/instagram.png', style='width: 50px')
+      img.icon(src='images/icons/tumblr.png', style='width: 50px')
+      img.icon(src='images/icons/twitter.gif', style='width: 50px')
+//- for icon in icons
+    
+   

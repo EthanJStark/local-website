@@ -1,3 +1,5 @@
+/*general css*/ 
+
 * {
   box-sizing: border-box;
 }
@@ -6,6 +8,8 @@
 html, body {
   height: 100%;
   width: 100%;
+  font-family: "Open Sans";
+  color: #434343;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -18,17 +22,6 @@ a, a:visited, a:hover, a:active {
     text-decoration: none;
     color: inherit;
 }
-
-/*For oakland header*/
-/*h1 {
-  position: absolute;
-  left: 30px;
-  top: 20px;
-  color: gray;
-  opacity: .3;
-
-}*/
-
 
 .container {
   max-width: 400px;
@@ -52,6 +45,8 @@ a, a:visited, a:hover, a:active {
     max-width: 1170px;
   }
 }
+
+/* navbar */ 
 
 nav {
   position: relative;
@@ -90,12 +85,6 @@ nav .burger {
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-/*
-h1 {
-  bottom: 100px;
-  text-align: center;
-
-}*/
 
 /* Caption text */
 .text {
@@ -116,6 +105,7 @@ h1 {
   border-color: #b77c82;
   background-color: #89131f;
   display: none;
+  z-index: 1;
 }
 
 .nav-dropdown > a {
@@ -161,9 +151,8 @@ div .dot:hover {
   to {opacity: 1}
 }
 
-/* ============================================================
-  SECTIONS PARALLAX
-============================================================ */
+/*parallax*/ 
+
 section.module:last-child {
   margin-bottom: 0;
   padding: 50px;
@@ -190,28 +179,46 @@ section.module.parallax {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  margin-top: 100px;
+  align-items: center;
+  color: white;
+  align-items: center;
 }
 section.module.parallax h1 {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 48px;
-  line-height: 600px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: white;
+  font-size: 30px;
+  align-items: center;
+  text-align: left;
 }
 section.module.parallax-1 {
   background-image: url("/images/pic1.jpg");
-  margin: 40px;
-
 }
 section.module.parallax-2 {
   background-image: url("/images/pic2.jpg");
-  margin: 40px;
+ 
 }
 section.module.parallax-3 {
-  background-image: url("/images/pic3.jpg");
-  margin: 40px;
+  background-image: url("/images/parallaxpic1.jpg");
+}
+
+section.module.parallax-5 {
+  background-image: url("/images/gallerypic3.jpg");
+}
+
+section.module.parallax-6 {
+  background-image: url("/images/umigallery.jpg");
+}
+
+section.module.parallax.parallax-9 {
+  background: url("/images/galleryevent1.png");
+}
+
+section.module.parallax.parallax-8 {
+  background: url("/images/galleryevent2.png");
+}
+
+section.module.parallax.parallax-7 {
+  background: url("/images/galleryimage4.jpg");
 }
 
 @media all and (min-width: 600px) {
@@ -228,43 +235,25 @@ section.module.parallax-3 {
 @media all and (min-width: 960px) {
   section.module.parallax h1 {
     font-size: 160px;
+    align-items: center;
   }
 }
 
-
 /*footer*/
-
 section.footer {
   color: black;
-  margin: 40px;
+ 
   padding: 20px;
 }
 
-
-/*omi gallery skeleton*/
-
-section.carouselplaceholder {
-  position: absolute;
-  width: 100%;
-  margin: 40px;
-}
-
-img.omilogo {
-  position: relative;
-  max-width: 50%
-  max-height: 50%;
+img.gallery {
+  width: 300px;
+  height: 350px;
 }
 
 section.footer p {
   line-height: 30px;
   text-align: left;
-}
-
-
-section.footer.socialmedia {
-  background-color: pink;
-  color: white;
-
 }
 
 *, *:before, *:after {
@@ -316,22 +305,8 @@ body { margin: 0; }
   padding-right: 0;
 }
 
-/* MEDIA QUERIES */
-@media screen and (min-width: 47.5em ) {
-  .leftColumn {
-    margin-right: 19.5em;
-  }
+/*carousel*/ 
 
-  .rightColumn { 
-    position:fixed; 
-    top: 0; 
-    right: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 6em
-  }   
-}
 .carousel {
   display: none;
   background-color: black;
@@ -339,14 +314,13 @@ body { margin: 0; }
   height: 280px;
   position: relative;
   overflow: hidden;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 @media (min-width: 768px){
   .carousel{
     display: block;
   }
 }
-
 .carousel > .carousel-image {
   position: absolute;
   top: 0;
@@ -424,7 +398,7 @@ body { margin: 0; }
   background-color: black;
 }
 
-/*INDEX SKELETON*/
+/*index*/ 
 .mission {
   background-image: url('/images/chalkboard.jpg');
   height: 250px;
@@ -454,7 +428,6 @@ body { margin: 0; }
     justify-content: space-around;
   }
 }
-
 .featured {
   /*columns: 2 400px;*/
   margin: 20px;
@@ -470,7 +443,7 @@ body { margin: 0; }
 .book-host {
   background-image: url('/images/pingpong.jpg');
   background-position: center;
-  height: 300px;
+  height: 300pux;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -482,14 +455,10 @@ body { margin: 0; }
 }
 
 .section-3 {
-  /*columns: 4 200px;*/
   margin: 20px;
   text-align: center;
 }
 
-.upcoming-events{
-  
-}
 .event-description{
   display: inline-block;
   /*outline: 1px dotted green;*/
@@ -499,20 +468,34 @@ body { margin: 0; }
   padding: 10px;
 }
 
+.event-description.gallery{
+  display: inline-block;
+  outline: 1px solid gray;
+  padding-bottom: 200px;
+}
+
 @media (min-width: 992px){
   .event-description {
-    width: 25%;""
+    width: 100%;""
   }
 }
 
+@media (min-width: 992px){
+ .event-description.gallery {
+    width: 100%;""
+  }
+}
+
+@media (min-width: 768px){
+  .event-description.gallery {
+    width: 33%;
+  }
+}
 
 .event-description-image{
   height: 200px;
   width: 100%;
   background: black;
-}
-.event-description-title {
-  
 }
 
 .youth {
@@ -549,6 +532,11 @@ body { margin: 0; }
   text-transform: uppercase;
 }
 
+.event-description2{
+  font-size: 20px;
+  text-align: center;
+}
+
 .footer {
   background-color: black;
   color: white;
@@ -573,4 +561,72 @@ nav .logo {
   background-size: contain;
   background-image: url('/images/impact-hub-logo.png');
   background-repeat: no-repeat;
+}
+
+/*omi*/
+
+body {
+  padding: 40px;
+}
+
+.gallery2 {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.galleryText {
+  text-align: left;
+  line-height: 30px;
+}
+ .upcoming-events-image {
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.upcoming-events {
+  margin-top: 50px;
+}
+
+section.form {
+  width: 100%;
+}
+
+section.socialmediafooter {
+  height: 125px;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+  background-color: #ff1493;
+  color: white;
+}
+
+p.info {
+  line-height: 30px;
+}
+
+button.info {
+  width: 100%;
+  line-height: 36px;
+  color: white;
+  background-color: grey;
+  outline: black;
+  border-radius: 2%;
+}
+
+img.icon {
+  margin: 20px;
+  filter: invert(100%);
+}
+
+.upcoming-stories {
+  display: inline-block;
+  padding-bottom: 200px;
+  margin-top: 40px;
+
+}
+
+iframe {
+  margin: 40px;
+  text-align: center;
 }
