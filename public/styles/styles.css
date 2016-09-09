@@ -26,8 +26,14 @@ a, a:visited, a:hover, a:active {
 .container {
   max-width: 400px;
   margin: 0 auto;
-  /*outline: 1px dotted red;*/
 }
+
+@media (min-width: 374px){
+  .container {
+    max-width: 750px;
+  }
+}
+
 
 @media (min-width: 768px){
   .container {
@@ -37,6 +43,19 @@ a, a:visited, a:hover, a:active {
 @media (min-width: 992px){
   .container {
     max-width: 970px;
+  }
+}
+
+/*iphone*/ 
+
+@media (min-width: 375px){
+  p, .footer, h2, img,  h1.main-header, footer, div.event-description.gallery, iframe, img.gallery, upcoming-evvents-image {
+    box-sizing: border-box;
+    display: table-row;
+    margin: 10px;
+    padding: 5px;
+    width: 100%;
+    min-height: 20%;
   }
 }
 
@@ -56,6 +75,7 @@ nav {
   color: white;
   letter-spacing: 2px;
 }
+
 @media (max-width: 767px){
   nav .burger {
     display: block;
@@ -96,6 +116,13 @@ nav {
   nav .burger{
     display: none;
   }
+
+@media (min-width: 375px){
+  footer, .footer, img.footer-logo {
+    display: none;
+  }
+
+
   nav .nav-links{
     position: absolute;
     top: 0;
@@ -243,6 +270,12 @@ section.module.parallax.parallax-7 {
   background: url("/images/galleryimage4.jpg");
 }
 
+
+@media all and (min-width: 374px) {
+  section.module h2 {
+    font-size: 42px;
+  }
+
 @media all and (min-width: 600px) {
   section.module h2 {
     font-size: 42px;
@@ -300,6 +333,8 @@ body { margin: 0; }
   margin-bottom: 0;
   padding-left: 0;
 }
+
+@media {}
 
 
 .nav > li,
