@@ -251,12 +251,12 @@ section.module.parallax.parallax-7 {
     font-size: 20px;
   }
   section.module.parallax h1 {
-    font-size: 96px;
+    font-size: 66px;
   }
 }
 @media all and (min-width: 960px) {
   section.module.parallax h1 {
-    font-size: 160px;
+    font-size: 88px;
     align-items: center;
   }
 }
@@ -502,7 +502,7 @@ body { margin: 0; }
   text-align: center;
 }
 
-.event-description{
+.event-description {
   display: inline-block;
   /*outline: 1px dotted green;*/
   width: 50%;
@@ -512,32 +512,32 @@ body { margin: 0; }
 }
 
 
-@media (min-width: 992px){
+@media (min-width: 992px) {
   .event-description {
     width: 25%;
   }
 }
 
-.event-description.gallery{
+.event-description.gallery {
   display: inline-block;
   outline: 1px solid gray;
   padding-bottom: 200px;
   margin: 10px;
 }
 
-@media (min-width: 992px){
+@media (min-width: 992px) {
  .event-description.gallery {
     width: 100%;
   }
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
   .event-description.gallery {
     width: 33%;
   }
 }
 
-.event-description-image{
+.event-description-image {
   width: 100%;
   background: black;
 }
@@ -577,7 +577,6 @@ body { margin: 0; }
 }
 
 .event-description2{
-  font-size: 20px;
   text-align: left;
   padding: 0 10px 10px 10px;
   width: 25%;
@@ -600,7 +599,6 @@ body { margin: 0; }
   background-position: top center;
   background-repeat: no-repeat;
 }
-
 
 .join-image4 {
   width: 75%;
@@ -667,8 +665,9 @@ body {
   margin-top: 50px;
 }
 
-section.form {
+section.form1 input {
   width: 100%;
+  color: black;
 }
 
 section.socialmediafooter {
@@ -702,10 +701,9 @@ img.icon {
   display: inline-block;
   padding-bottom: 200px;
   margin-top: 40px;
-
 }
 
-iframe {
+iframe, section.center-movie {
   margin: 40px;
   text-align: center;
 }
