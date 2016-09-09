@@ -8,6 +8,17 @@ html, body {
   width: 100%;
 }
 
+h1, h2, h3, h4, h5, h6{
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+a, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
 /*For oakland header*/
 /*h1 {
   position: absolute;
@@ -325,7 +336,7 @@ body { margin: 0; }
   display: none;
   background-color: black;
   width: 100%;
-  height: 300px;
+  height: 280px;
   position: relative;
   overflow: hidden;
   margin-top: 40px;
@@ -425,6 +436,16 @@ body { margin: 0; }
 
 .mission p {
   color: white;
+  font-style: italic;
+  line-height: 1.7em;
+}
+
+.mission2 {
+  margin: 40px;
+}
+
+.mission2 a{
+  color: #a6a6a6
 }
 
 @media (min-width: 768px){

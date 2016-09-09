@@ -14,17 +14,17 @@ block content
       for image in carouselImages
         a.carousel-dot(href="")
   .mission
-    div
+    .mission2
       h1 COME FOR COWORKING, STAY FOR COMMUNITY
       p Impact Hub Oakland is a member-based coworking space and event venue for entrepreneurs creating positive impact.
-    div
+    .mission2
       h2 
         a(href='') Download a Free Day Pass
       h2 
         a(href='') Schedule a Tour
   .featured
     .featured2
-      h1.main-header Featured News
+      h1.main-header Featured Events
       .upcoming-events-header 
         button UPCOMING EVENTS
     .upcoming-events
@@ -32,10 +32,10 @@ block content
         .event-description
           img.event-description-image(src=imageUrl)
           .event-description-title= title
-      +event("/event1.png", "IHO WORKTRADE INFO SESSION – Q4!")
-      +event("/event1.png", "COCAP 2016 – RADICAL REDISTRIBUTION OF WEALT")
-      +event("/event1.png", "THE SWEETWATER SESSIONS, VOL. 5 “BLACK IS BLUE”")
-      +event("/event1.png", "CHRISTEN LIEN CONCERT – ELPIS IS COMING")
+      +event("/images/event1.jpg", "IHO WORKTRADE INFO SESSION – Q4!")
+      +event("/images/event2.jpg", "COCAP 2016 – RADICAL REDISTRIBUTION OF WEALT")
+      +event("/images/event3.jpg", "THE SWEETWATER SESSIONS, VOL. 5 “BLACK IS BLUE”")
+      +event("/images/event4.jpg", "CHRISTEN LIEN CONCERT – ELPIS IS COMING")
         //- for event in events
         //-   .event-description
         //-     img.event-description-image(src=event.imageUrl)
@@ -56,10 +56,10 @@ block content
         .event-description
           img.event-description-image(src=imageUrl)
           .event-description-title= title
-      +event("/event1.png", "IHO WORKTRADE INFO SESSION – Q4!")
-      +event("/event1.png", "COCAP 2016 – RADICAL REDISTRIBUTION OF WEALT")
-      +event("/event1.png", "THE SWEETWATER SESSIONS, VOL. 5 “BLACK IS BLUE”")
-      +event("/event1.png", "CHRISTEN LIEN CONCERT – ELPIS IS COMING")
+      +event("/images/event1.jpg", "IHO WORKTRADE INFO SESSION – Q4!")
+      +event("/images/event2.jpg", "COCAP 2016 – RADICAL REDISTRIBUTION OF WEALT")
+      +event("/images/event3.jpg", "THE SWEETWATER SESSIONS, VOL. 5 “BLACK IS BLUE”")
+      +event("/images/event4.jpg", "CHRISTEN LIEN CONCERT – ELPIS IS COMING")
   .youth
     h2 CHECK OUT THE IMPACT YOUTH HUB
     .youth2
