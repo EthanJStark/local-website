@@ -2,29 +2,31 @@
   div
     h2 Sign up for our newsletter
     form(action='/newsletter', method='post')
-      div
-        label(for='mail') E-mail:
-        input#mail(type='email', name='user_mail')
-      .button
-        button(type='submit') Subscribe
-    h2 Connect With Us
+      .form
+        label(for='mail')
+        input#mail(type='email', name='user_mail', placeholder='Email')
+      .banner-buttons2
+        h2 Subscribe
+    div
+      .footer-logo
+        img(src='/images/impact-hub-logo-white.png')
+        h3 Oakland
+      
       
   div
     h2 Contact Us
     form(action='/contact', method='post')
-      div
-        label(for='full name') Name:
-        input#name(type='text', name='full_name')
-      div
-        label(for='mail') E-mail:
-        input#mail(type='email', name='user_mail')
-      div
-        label(for='subject') Subject:
-        input#subject(type='text', name='subject')
-      div
-        label(for='msg') Message:
-        textarea#msg(name='user_message')
-      .button
-        button(type='submit') Send your message
-
-  
+      .form
+        label(for='full name')
+        input#name(type='text', name='full_name', placeholder='Full name')
+      .form
+        label(for='mail')
+        input#mail(type='email', name='user_mail', placeholder='Email')
+      .form
+        label(for='subject')
+        input#subject(type='text', name='subject', placeholder='Subject')
+      .form
+        label(for='msg')
+        textarea#msg(name='user_message', placeholder='Your message')
+      .banner-buttons2
+        h2 Send your message

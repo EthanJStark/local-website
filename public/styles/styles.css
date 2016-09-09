@@ -278,6 +278,10 @@ section.footer p {
   text-align: left;
 }
 
+.footer-logo {
+  display: block;
+}
+
 *, *:before, *:after {
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
@@ -440,7 +444,7 @@ body { margin: 0; }
   margin: 40px;
 }
 
-.mission2 a{
+.mission2 h2{
   color: #a6a6a6
 }
 
@@ -480,11 +484,6 @@ body { margin: 0; }
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-
-.book-host .book{
-  position: relative;
-  bottom: 40px;
 }
 
 @media (min-width: 768px){
@@ -610,16 +609,20 @@ body { margin: 0; }
   background-repeat: no-repeat;
 }
 
-
-
-
 .footer {
-  background-color: black;
+  background-image: url('/images/chalkboard.jpg');
   color: white;
 }
 
-.footer form {
+.footer textarea, input {
+  background: transparent;
+  color: white;
 }
+
+.form {
+  margin: 7px 0px;
+}
+
 @media (min-width: 768px){
   .footer {
     display: flex;
@@ -727,6 +730,40 @@ iframe {
 }
 
 .banner-buttons h2:hover {
+  background-color: #800000;
+  color: white;
+  outline: none;
+}
+
+.banner-buttons2 h2 {
+  display: inline-block;
+  padding: 10px;
+  width: auto;
+  color: white;
+  background-color: #171d22;
+}
+
+.banner-buttons2 h2:hover {
+  background-color: #800000;
+  color: white;
+  outline: none;
+}
+
+.banner-buttons3 {
+  position: relative;
+  bottom: 40px;
+}
+
+.banner-buttons3 h2 {
+  display: inline-block;
+  padding: 10px;
+  width: auto;
+  color: white;
+  background: transparent;
+  outline: 3px solid white;
+}
+
+.banner-buttons3 h2:hover {
   background-color: #800000;
   color: white;
   outline: none;
