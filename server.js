@@ -33,6 +33,10 @@ app.get('/', (request, response) => {
   })
 })
 
+app.get('/join', (request, response) => {
+  response.render('join')
+})
+
 app.get('/footer', (request, response) => {
   response.render('footer')
 })

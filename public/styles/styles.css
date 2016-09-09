@@ -54,22 +54,59 @@ nav {
   padding: 1px;
   height: 38px;
 }
+@media (max-width: 767px){
+  nav .burger {
+    display: block;
+    position: absolute;
+    top: 7px;
+    right: 15px;
+    height: 20px;
+    width: 20px;
+  }
 
-nav .burger {
-  display: block;
-  position: absolute;
-  top: 7px;
-  right: 15px;
-  height: 20px;
-  width: 20px;
+  nav .burger > .burger-bar {
+    border-bottom: 2px solid white;
+    margin-top: 4px;
+  }
+
+  nav .nav-links {
+    position:absolute;
+    top: 38px;
+    right: 0px;
+    padding: 1em;
+    border: 1px solid;
+    border-color: #b77c82;
+    background-color: #89131f;
+    display: none;
+    z-index: 1;
+  }
+
+  nav .nav-links > a {
+    display: block;
+    padding: .5em;
+    color: white;
+    text-decoration: none;
+  }
 }
 
-.burger > .burger-bar {
-  border-bottom: 2px solid white;
-  margin-top: 4px;
+@media (min-width: 768px){
+  nav .burger{
+    display: none;
+  }
+  nav .nav-links{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  nav .nav-links > a{
+    margin-right  .upcoming-events-image2: 1em
+  }
 }
-
-
 
 .slides {
   top: 100px;
@@ -96,24 +133,6 @@ nav .burger {
   width: 100%;
   text-align: center;
 }  
-.nav-dropdown {
-  position:absolute;
-  top: 38px;
-  right: 0px;
-  padding: 1em;
-  border: 1px solid;
-  border-color: #b77c82;
-  background-color: #89131f;
-  display: none;
-  z-index: 1;
-}
-
-.nav-dropdown > a {
-  display: block;
-  padding: .5em;
-  color: white;
-  text-decoration: none;
-}
 
 
 /* The dots/bullets/indicators */
@@ -440,13 +459,35 @@ body { margin: 0; }
   }
 }
 
+.featured3 {
+  
+}
+
+@media (min-width: 768px){
+  .featured3 {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
 .book-host {
   background-image: url('/images/pingpong.jpg');
   background-position: center;
-  height: 300pux;
+  height: 300px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.book-host .book{
+  position: relative;
+  bottom: 40px;
+}
+
+@media (min-width: 768px){
+  .book-host .book{
+    bottom: 0;
+  }
 }
 
 .movie {
@@ -468,6 +509,13 @@ body { margin: 0; }
   padding: 10px;
 }
 
+
+@media (min-width: 992px){
+  .event-description {
+    width: 25%;
+  }
+}
+
 .event-description.gallery{
   display: inline-block;
   outline: 1px solid gray;
@@ -475,14 +523,8 @@ body { margin: 0; }
 }
 
 @media (min-width: 992px){
-  .event-description {
-    width: 100%;""
-  }
-}
-
-@media (min-width: 992px){
  .event-description.gallery {
-    width: 100%;""
+    width: 100%;
   }
 }
 
@@ -493,7 +535,6 @@ body { margin: 0; }
 }
 
 .event-description-image{
-  height: 200px;
   width: 100%;
   background: black;
 }
@@ -534,9 +575,25 @@ body { margin: 0; }
 
 .event-description2{
   font-size: 20px;
-  text-align: center;
+  text-align: left;
+  padding: 0 10px 10px 10px;
+  width: 25%;
 }
 
+.event-description2 h1{
+  margin: 0;
+}
+
+.upcoming-events-image2 {
+  width: 75%;
+  background-image: url('/images/individual-coworking-membership.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+/*.upcoming-events-image2 img{
+  width: 100%;
+  height: auto;
+}*/
 .footer {
   background-color: black;
   color: white;
@@ -629,4 +686,35 @@ img.icon {
 iframe {
   margin: 40px;
   text-align: center;
+}
+
+.joinbanner {
+  background-image: url('/images/joinbanner.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 380px;
+}
+
+.banner-buttons {
+  text-align: center;
+}
+
+.banner-buttons h2 {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  outline: 3px solid black;
+  width: auto;
+}
+
+.banner-buttons h2:hover {
+  background-color: #800000;
+  color: white;
+  outline: none;
+}
+
+.spacer {
+  height: 40px;
+  border-top: solid black 3px;
+  border-bottom: solid black 3px;
 }
