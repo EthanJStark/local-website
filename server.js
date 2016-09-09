@@ -42,7 +42,15 @@ app.get('/main', (request, response) => {
 })
 
 app.get('/gallery', (request, response) => {
-  response.render('omi')
+  const galleryImages = [
+    '/images/gallerypic1.jpg',
+    '/images/gallerypic2.jpg',
+    '/images/gallerypic3.jpg',
+  ]
+
+  response.render('omi', {
+    galleryImages: galleryImages
+  })
 })
 
 

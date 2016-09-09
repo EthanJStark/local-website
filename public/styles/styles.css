@@ -182,25 +182,28 @@ section.module.parallax {
 }
 section.module.parallax h1 {
   color: rgba(255, 255, 255, 0.8);
-  font-size: 48px;
-  line-height: 600px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  font-size: 30px;
+  align-items: center;
+  text-align: left;
+  opacity: .5;
 }
 section.module.parallax-1 {
   background-image: url("/images/pic1.jpg");
-  margin: 40px;
+ 
 
 }
 section.module.parallax-2 {
   background-image: url("/images/pic2.jpg");
-  margin: 40px;
+ 
 }
 section.module.parallax-3 {
   background-image: url("/images/pic3.jpg");
-  margin: 40px;
+ 
+}
+
+section.module.parallax-6 {
+  background-image: url("/images/pic3.jpg");
+ 
 }
 
 @media all and (min-width: 600px) {
@@ -217,6 +220,7 @@ section.module.parallax-3 {
 @media all and (min-width: 960px) {
   section.module.parallax h1 {
     font-size: 160px;
+    align-items: center;
   }
 }
 
@@ -225,18 +229,12 @@ section.module.parallax-3 {
 
 section.footer {
   color: black;
-  margin: 40px;
+ 
   padding: 20px;
 }
 
 
 /*omi gallery skeleton*/
-
-section.carouselplaceholder {
-  position: absolute;
-  width: 100%;
-  margin: 40px;
-}
 
 img.omilogo {
   position: relative;
@@ -466,9 +464,6 @@ body { margin: 0; }
   text-align: center;
 }
 
-.upcoming-events{
-  
-}
 .event-description{
   display: inline-block;
   /*outline: 1px dotted green;*/
@@ -511,6 +506,11 @@ body { margin: 0; }
   text-transform: uppercase;
 }
 
+.event-description2{
+  font-size: 20px;
+  text-align: center;
+}
+
 .footer {
   background-color: black;
   color: white;
@@ -536,3 +536,26 @@ nav .logo {
   background-image: url('/images/impact-hub-logo.png');
   background-repeat: no-repeat;
 }
+
+/*omi*/
+
+body {
+  padding: 40px;
+}
+
+.gallery {
+  text-align: center;
+ 
+}
+ .upcoming-events-image {
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 30px;
+ }
+
+ .upcoming-events {
+  height: 600px;
+  margin-top: 50px;
+ }
+
+ .upcoming-events
