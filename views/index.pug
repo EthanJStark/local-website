@@ -36,10 +36,6 @@ block content
       +event("/images/event2.jpg", "COCAP 2016 – RADICAL REDISTRIBUTION OF WEALT")
       +event("/images/event3.jpg", "THE SWEETWATER SESSIONS, VOL. 5 “BLACK IS BLUE”")
       +event("/images/event4.jpg", "CHRISTEN LIEN CONCERT – ELPIS IS COMING")
-        //- for event in events
-        //-   .event-description
-        //-     img.event-description-image(src=event.imageUrl)
-        //-     .event-description-title= event.title
       
   .book-host
     a.book(href='') BOOK A CONFERENCE ROOM
@@ -49,8 +45,8 @@ block content
   .featured
     .featured2
       h1.main-header STORIES FROM OUR COMMUNITY
-      .upcoming-events-header 
-        button UPCOMING EVENTS
+      //- .upcoming-events-header 
+      //-   button UPCOMING EVENTS
     .upcoming-events
       mixin event(imageUrl, title)
         .event-description
@@ -66,4 +62,3 @@ block content
       img(src='/images/youth.jpg')
       div
         p Impact HUB Oakland has chosen United Roots and Youth SEED to launch Youth HUB, a collaborative workspace for young social innovators, and provides programming that will create a pipeline for low-income youth of color to participate in creating business enterprises that address social and environmental issues.
-        a(href='') LEARN MORE

@@ -516,13 +516,30 @@ body { margin: 0; }
 }
 
 .youth {
-  margin: 50px;
+  margin: 20px;
+}
+
+.youth h2 {
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  padding: 20px;
+}
+
+.youth2 {
+  margin: 40px;
+  text-align: center;
+}
+
+.youth2 p {
+  text-align: left;
+  margin: 23px;
 }
 
 @media (min-width: 768px){
   .youth2 {
     display: flex;
     justify-content: space-around;
+
   }
 }
 
