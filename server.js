@@ -48,8 +48,17 @@ app.get('/gallery', (request, response) => {
     '/images/gallerypic3.jpg',
   ]
 
+  const galleryEventPics = [
+    '/images/event1.jpg',
+    '/images/event2.jpg',
+    '/images/event3.jpg',
+    '/images/event4.jpg',
+    '/images/event5.jpg',
+  ]
+
   response.render('omi', {
-    galleryImages: galleryImages
+    galleryImages: galleryImages,
+    galleryEventPics: galleryEventPics
   })
 })
 

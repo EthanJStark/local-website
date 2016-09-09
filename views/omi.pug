@@ -18,6 +18,7 @@ block content
   .gallery
     .gallery2
       img(src='/images/logo.png')
+    .galleryText
       p Omi Gallery is a interactive space for artisans, theorists, creative entrepreneurs, organizers, and students designed to feature diverse voices and genres that are artistically and socially relevant. Our programming intentionally nourishes partnerships between creatives, businesses, institutions, and the public. Omi Gallery presents Invite Only, new and traveling visual, sound, and performance works by emerging and established curators and artists, as well as concept-driven shared exhibitions in collaboration with other cultural institutions. We are located in Oakland at Impact Hub Oakland and in San Francisco at ThoughtWorks in SoMA. Gallery Director: Ashara Ekundayo | Gallery Manager: Melonie Green
   
   section.module.parallax.parallax-6
@@ -27,27 +28,46 @@ block content
     .featured2
       p.event-description2 OMI GALLERY 2323 Broadway | Oakland, 94612 Mis Raices/My Roots August 5 - September 30, 2016 13 new prints by Mexican artist Jhovany Rodriguez De Ala. In this show, Jhovany talks about Art as Informant by showing us our history and allowing us to discover and reconstruct our identity through reflections that demand us images that speak of humanity and identity struggles.
       .upcoming-events-image
-        img.gallery(src='images/galleryevent1.png' width='200px')
+        img.gallery(src='images/galleryevent1.png')
     .featured2
       p.event-description2 OMI GALLERY - UPPER LEVEL 2323 Broadway | Oakland, 94612 Watermelon Woman 3.0 August 5 - September 30, 2016 Watermelon Woman 3.0 is an interactive program where academic partners, artists of various mediums and creative technologies, and socially conscious venue partners unite to pay homage, celebrate and highlight the cultural relevance of the legendary film, Watermelon Woman by filmmaker Cheryl Dunye
       .upcoming-events-image
-        img.gallery(src='images/galleryimage2.jpg' width='200px')
+        img.gallery(src='images/galleryimage2.jpg')
     .featured2
       p.event-description2 OMI GALLERY - ThoughtWorks SF 814 Mission St., 5th Floor | SF, 94103 "Black Powered" Paintings by Mahader Tesfai July 8 - Sept 30, 2016 This exhibit is made up of a new collection of black and gold paintings based on found objects that explore the relationship between technology and displacement.
       .upcoming-events-image
-        img.gallery(src='images/galleryimage3.jpg' width='200px')
+        img.gallery(src='images/galleryimage3.jpg')
   section.module.parallax.parallax-6
     .container
       h1 EVENTS AT OMI GALLERY
-    .upcoming-events
-      mixin event(imageUrl, title)
-        .event-description
-          img.event-description-image(src=imageUrl)
-          .event-description-title= title
-      +event("/event1.png", "IHO WORKTRADE INFO SESSION – Q4!")
-      +event("/event1.png", "COCAP 2016 – RADICAL REDISTRIBUTION OF WEALT")
-      +event("/event1.png", "THE SWEETWATER SESSIONS, VOL. 5 “BLACK IS BLUE”")
-      +event("/event1.png", "CHRISTEN LIEN CONCERT – ELPIS IS COMING")
-  section.module.parallax.parallax-6
+  .upcoming-events
+    for events in galleryEventPics
+      .event-description.gallery
+        img.event-description-image(src=events)
+        p The Sweetwater Sessions, Vol. 5 “Black Is Blue” Read More
+  
+  section.module.parallax.parallax-5
+    .container
+      h2 CREATIVE ARTS PRACTICE FELLOWSHIP
+    .container
+  p.info Omi Gallery hosts 2 cohorts of Creative Arts Practice (CAP) Fellows per calendar (Jan-June and July-Dec) who participate in supporting the daily operations, design, programming and communications management of Omi Gallery at Impact Hub Oakland and ThoughtWorks SF. CAP Fellows support the development and production of visual, educational, and performing arts programs including de/installation, artist relations, exhibition programming, media relations, digital/online marketing, and documentation. Presently CAP Fellows are Invite-Only and selected through the Work-Trade Program at Impact Hub Oakland
+  button.info(src='/') APPLY FOR THE CREATIVE ARTS FELLOWSHIP
 
-       
+  section.module.parallax.parallax-6
+    .container
+      h1 CONTACT US
+  section.form
+    h4 Interested in the current exhibition and/or would like to show your work at Omi Gallery? Drop us a line with links to your portfolio.
+    h4 Name
+    input(type='text' placeholder='Your Name' style='width:100%') 
+    h4 Subject
+    input(type='text' placeholder='Subject' style='width:100%') 
+    h4 Email
+    input(type='text' placeholder='Your email' style='width:100%') 
+    h4 Message
+    textarea(rows='4', cols='50' style='width:100%')
+    div  
+      input(type='Submit' name='Send')
+
+  section.socialmediafooter
+   
