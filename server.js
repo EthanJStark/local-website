@@ -56,9 +56,17 @@ app.get('/gallery', (request, response) => {
     '/images/event5.jpg',
   ]
 
+  const icons = [
+    '/images/icons/facebook.png',
+    '/images/icons/instagram.png',
+    '/images/icons/tumblr.png',
+    '/images/icons/twitter.gif',
+  ]
+
   response.render('omi', {
     galleryImages: galleryImages,
-    galleryEventPics: galleryEventPics
+    galleryEventPics: galleryEventPics,
+    icons: icons
   })
 })
 

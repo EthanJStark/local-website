@@ -8,6 +8,8 @@
 html, body {
   height: 100%;
   width: 100%;
+  font-family: "Open Sans";
+  color: #434343;
 }
 
 .container {
@@ -536,7 +538,7 @@ body {
   margin-left: 30px;
 }
 
- .upcoming-events {
+.upcoming-events {
   margin-top: 50px;
 }
 
@@ -546,8 +548,10 @@ section.form {
 
 section.socialmediafooter {
   height: 125px;
+  padding: 20px;
   margin-top: 20px;
-  background-color: #ff3399;
+  text-align: center;
+  background-color: #ff1493;
   color: white;
 }
 
@@ -562,4 +566,9 @@ button.info {
   background-color: grey;
   outline: black;
   border-radius: 2%;
+}
+
+img.icon {
+  margin: 20px;
+  filter: invert(100%);
 }
