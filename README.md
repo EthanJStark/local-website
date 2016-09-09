@@ -1,3 +1,6 @@
+## Recreation of Impact Hub: Oakland
+Our site is [live on heroku.](https://impact-hub-oakland.herokuapp.com/)
+
 ## Description
 
 Build a website for a local organization.
@@ -22,13 +25,13 @@ As you work on this goal, consider these questions:
 
 ## Specifications
 
-- [ ] Site has at least 3 pages.
-- [ ] All links work correctly (i.e. no broken links).
-- [ ] All images and other external resources load correctly.
-- [ ] No external frameworks are used.
-- [ ] Mobile-first design.
-- [ ] Deployed to Heroku.
-- [ ] The artifact produced is properly licensed, preferably with the [MIT license][mit-license].
+- [X] Site has at least 3 pages.
+- [X] All links work correctly (i.e. no broken links).
+- [X] All images and other external resources load correctly.
+- [X] No external frameworks are used.
+- [X] Mobile-first design.
+- [X] Deployed to Heroku.
+- [X] The artifact produced is properly licensed, preferably with the [MIT license][mit-license].
 
 ---
 
