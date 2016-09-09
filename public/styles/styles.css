@@ -12,6 +12,17 @@ html, body {
   color: #434343;
 }
 
+h1, h2, h3, h4, h5, h6{
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+a, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
 .container {
   max-width: 400px;
   margin: 0 auto;
@@ -300,7 +311,7 @@ body { margin: 0; }
   display: none;
   background-color: black;
   width: 100%;
-  height: 300px;
+  height: 280px;
   position: relative;
   overflow: hidden;
   margin-top: 60px;
@@ -399,6 +410,16 @@ body { margin: 0; }
 
 .mission p {
   color: white;
+  font-style: italic;
+  line-height: 1.7em;
+}
+
+.mission2 {
+  margin: 40px;
+}
+
+.mission2 a{
+  color: #a6a6a6
 }
 
 @media (min-width: 768px){
@@ -471,24 +492,37 @@ body { margin: 0; }
   }
 }
 
-
 .event-description-image{
   height: 200px;
   width: 100%;
   background: black;
 }
-.event-description-title {
-  
-}
 
 .youth {
-  margin: 50px;
+  margin: 20px;
+}
+
+.youth h2 {
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  padding: 20px;
+}
+
+.youth2 {
+  margin: 40px;
+  text-align: center;
+}
+
+.youth2 p {
+  text-align: left;
+  margin: 23px;
 }
 
 @media (min-width: 768px){
   .youth2 {
     display: flex;
     justify-content: space-around;
+
   }
 }
 
