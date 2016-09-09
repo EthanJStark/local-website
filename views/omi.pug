@@ -53,6 +53,30 @@ block content
   p.info Omi Gallery hosts 2 cohorts of Creative Arts Practice (CAP) Fellows per calendar (Jan-June and July-Dec) who participate in supporting the daily operations, design, programming and communications management of Omi Gallery at Impact Hub Oakland and ThoughtWorks SF. CAP Fellows support the development and production of visual, educational, and performing arts programs including de/installation, artist relations, exhibition programming, media relations, digital/online marketing, and documentation. Presently CAP Fellows are Invite-Only and selected through the Work-Trade Program at Impact Hub Oakland
   button.info(src='/') APPLY FOR THE CREATIVE ARTS FELLOWSHIP
 
+  section.module.parallax.parallax-3
+    .container
+      h2 VIDEOS FROM OMI GALLERY
+  iframe(width="560" height="315" src="https://www.youtube.com/embed/8x0iRGnPqws" frameborder="0" allowfullscreen)
+
+  section.module.parallax.parallax-8
+    .container
+      h2 STORIES FROM OMI GALLERY
+  .upcoming-stories
+    for story in stories
+      .event-description.gallery
+        img.event-description-image(src=story)
+        p The Sweetwater Sessions, Vol. 5 “Black Is Blue” Read More
+
+  section.module.parallax.parallax-7
+    .container
+      h2 PAST EXHIBITS
+  .pastexhibits
+  for exhibit in exhibits
+      .event-description.gallery
+        img.event-description-image(src=exhibit)
+        p Past Events
+
+
   section.module.parallax.parallax-6
     .container
       h1 CONTACT US

@@ -63,10 +63,32 @@ app.get('/gallery', (request, response) => {
     '/images/icons/twitter.gif',
   ]
 
+  const stories = [
+    '/images/story1.jpg',
+    '/images/story2.jpg'
+  ]
+
+  const exhibits = [
+    '/images/exhibit1.jpg',
+    '/images/exhibit2.jpg',
+    '/images/exhibit3.jpg',
+    '/images/exhibit4.jpg',
+    '/images/exhibit5.jpg',
+    '/images/exhibit6.jpg',
+    '/images/exhibit7.jpg',
+    '/images/exhibit8.jpg',
+    '/images/exhibit9.jpg',
+    '/images/exhibit10.jpg',
+    '/images/exhibit11.jpg',
+    '/images/exhibit12.jpg',
+  ]
+
   response.render('omi', {
     galleryImages: galleryImages,
     galleryEventPics: galleryEventPics,
-    icons: icons
+    icons: icons,
+    stories: stories,
+    exhibits: exhibits
   })
 })
 

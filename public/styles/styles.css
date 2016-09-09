@@ -170,6 +170,8 @@ section.module.parallax {
   background-size: cover;
   margin-top: 100px;
   align-items: center;
+  color: white;
+  align-items: center;
 }
 section.module.parallax h1 {
   color: white;
@@ -185,17 +187,27 @@ section.module.parallax-2 {
  
 }
 section.module.parallax-3 {
-  background-image: url("/images/pic3.jpg");
+  background-image: url("/images/parallaxpic1.jpg");
 }
 
 section.module.parallax-5 {
   background-image: url("/images/gallerypic3.jpg");
-  color: white;
-  align-items: center;
 }
 
 section.module.parallax-6 {
   background-image: url("/images/umigallery.jpg");
+}
+
+section.module.parallax.parallax-9 {
+  background: url("/images/galleryevent1.png");
+}
+
+section.module.parallax.parallax-8 {
+  background: url("/images/galleryevent2.png");
+}
+
+section.module.parallax.parallax-7 {
+  background: url("/images/galleryimage4.jpg");
 }
 
 @media all and (min-width: 600px) {
@@ -571,4 +583,16 @@ button.info {
 img.icon {
   margin: 20px;
   filter: invert(100%);
+}
+
+.upcoming-stories {
+  display: inline-block;
+  padding-bottom: 200px;
+  margin-top: 40px;
+
+}
+
+iframe {
+  margin: 40px;
+  text-align: center;
 }
