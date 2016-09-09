@@ -42,7 +42,54 @@ app.get('/main', (request, response) => {
 })
 
 app.get('/gallery', (request, response) => {
-  response.render('omi')
+  const galleryImages = [
+    '/images/gallerypic1.jpg',
+    '/images/gallerypic2.jpg',
+    '/images/gallerypic3.jpg',
+  ]
+
+  const galleryEventPics = [
+    '/images/event1.jpg',
+    '/images/event2.jpg',
+    '/images/event3.jpg',
+    '/images/event4.jpg',
+    '/images/event5.jpg',
+  ]
+
+  const icons = [
+    '/images/icons/facebook.png',
+    '/images/icons/instagram.png',
+    '/images/icons/tumblr.png',
+    '/images/icons/twitter.gif',
+  ]
+
+  const stories = [
+    '/images/story1.jpg',
+    '/images/story2.jpg'
+  ]
+
+  const exhibits = [
+    '/images/exhibit1.jpg',
+    '/images/exhibit2.jpg',
+    '/images/exhibit3.jpg',
+    '/images/exhibit4.jpg',
+    '/images/exhibit5.jpg',
+    '/images/exhibit6.jpg',
+    '/images/exhibit7.jpg',
+    '/images/exhibit8.jpg',
+    '/images/exhibit9.jpg',
+    '/images/exhibit10.jpg',
+    '/images/exhibit11.jpg',
+    '/images/exhibit12.jpg',
+  ]
+
+  response.render('omi', {
+    galleryImages: galleryImages,
+    galleryEventPics: galleryEventPics,
+    icons: icons,
+    stories: stories,
+    exhibits: exhibits
+  })
 })
 
 
